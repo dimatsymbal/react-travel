@@ -1,39 +1,46 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-// const h1 = React.createElement("h1", {class: "Title"}, "Big title in React page")
-// const p = React.createElement("p", {id:"paragraph1"}, "lorem")
-// const list = React.createElement("ul", {class:"list_under_paragraph"}, React.createElement("li", {class: "list_item"}, "List Element 1"), 
-// React.createElement("li", {class: "list_item"}, "List Element 2"),
-// React.createElement("li", {class: "list_item"}, "List Element 3"),
-// React.createElement("li", {class: "list_item"}, "List Element 4"))
+const Title = () => {
+    return <h1>Hello App.js</h1>
+}
 
-// __________________________________________jsx_____________________________________________
+const Content = () => {
+    return (
+        <React.Fragment>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                perspiciatis explicabo non illum dolores incidunt ipsam
+                molestias aliquam ipsa nulla quam quia, quaerat rerum fugiat,
+                velit eligendi ducimus vel alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                perspiciatis explicabo non illum dolores incidunt ipsam
+                molestias aliquam ipsa nulla quam quia, quaerat rerum fugiat,
+                velit eligendi ducimus vel alias?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                perspiciatis explicabo non illum dolores incidunt ipsam
+                molestias aliquam ipsa nulla quam quia, quaerat rerum fugiat,
+                velit eligendi ducimus vel alias?
+            </p>
+        </React.Fragment>
+    )
+}
 
-const h1 = <h1 className='title' >Big title in React page</h1>
-const p = <p id = "paragraph1">lorem,lorem,lorem,lorem,lorem,lorem</p>
-const img = <img src="https://html.com/wp-content/uploads/very-large-flamingo.jpg" alt="img1"></img>
-const buttonFinish = <button className='btn_finish'>Click me!</button>
-
-const a = 10
-const b = 'Element 5'
-const list = <ul className='list_spisok'>
-  <li id = "list_item1">List Element 1</li>
-  <li id = "list_item2">List Element 2</li>
-  <li id = "list_item3">List Element 3</li>
-  <li id = "list_item4">List Element {a * 2}</li>
-  <li id = "list_item5">List Element {b}</li>
-  <li id = "list_item6">List Element 6</li>
-  <li id = "list_item7">List Element 7</li>
-</ul>
-
-const structure = <div>
-  {h1}
-  {list}
-  {p}
-  {img}
-  {buttonFinish}
-</div>
-
+function App () {
+  return (
+    <>
+      <Title />
+      <Content />
+    </>
+  )
+}
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(<React.StrictMode>{structure}</React.StrictMode>)
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+)
