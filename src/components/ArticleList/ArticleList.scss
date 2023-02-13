@@ -1,0 +1,29 @@
+.Article_list {
+    width: 980px;
+}
+
+@media (max-width: 900px) {
+    .Article_list {
+        width: 100%;
+        position: relative;
+        top: 70px;
+        left: calc(50% - 350px / 2 + 0.5px);
+        display: flex;
+        flex-direction: column;
+
+        .wor {
+            visibility: hidden;
+
+            .loc {
+                visibility: hidden;
+            }
+        }
+
+        .cart {
+            visibility: visible;
+            min-width: 350px;
+            height: 450px;
+            margin-bottom: 50px;
+        }
+    }
+}

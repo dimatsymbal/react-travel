@@ -1,0 +1,196 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Guest_Block {
+    width: 100%;
+    height: 820px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 720px;
+    }
+
+    .guest_field_leftside {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 700px;
+        height: 400px;
+        background-color: #485246;
+        z-index: 1;
+
+        h2 {
+            position: absolute;
+            left: 60px;
+            top: 30px;
+            width: 430px;
+            visibility: visible;
+            text-align: left;
+            line-height: 48px;
+            letter-spacing: 0px;
+            font-weight: 700;
+            font-size: 44px;
+            border-color: rgb(80, 72, 64);
+            border-style: none;
+            margin: 0px;
+            border-radius: 0px;
+            padding: 0px;
+            color: rgb(240, 238, 235);
+        }
+
+        p {
+            width: 450px;
+            position: absolute;
+            left: 60px;
+            top: 230px;
+            visibility: visible;
+            text-align: left;
+            line-height: 25px;
+            letter-spacing: 0px;
+            font-weight: 400;
+            font-size: 16px;
+            border-color: rgb(80, 72, 64);
+            border-style: none;
+            margin: 0px;
+            border-radius: 0px;
+            padding: 0px;
+            color: rgba(240, 238, 235, 0.62);
+        }
+
+        button {
+            position: absolute;
+            right: -120px;
+            top: 120px;
+            z-index: 14;
+            background-color: #ac8a62;
+            visibility: visible;
+            text-align: center;
+            line-height: 51px;
+            letter-spacing: 0px;
+            font-weight: 600;
+            font-size: 20px;
+            border-color: rgb(172, 138, 98);
+            border-style: none;
+            margin: 0px;
+            border-radius: 0px;
+            padding: 5px 32px;
+            color: rgb(34, 34, 34);
+            text-decoration: none;
+            white-space: normal;
+            width: 300px;
+            height: auto;
+            filter: blur(0px) grayscale(0%) brightness(100%);
+            opacity: 1;
+            transform: rotate(-90deg);
+            border-width: 0px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #927757;
+            transition: 0.5s;
+        }
+    }
+
+    .down_field {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        bottom: 0px;
+        background-color: #363f36;
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        z-index: 0;
+
+        .flex_block {
+            width: 200px;
+            margin-right: calc(25% - 200px / 2 - 0.5px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                line-height: 25px;
+                letter-spacing: 0px;
+                font-weight: 400;
+                font-size: 15px;
+                color: rgba(240, 238, 235, 0.62);
+            }
+
+            a:hover {
+                color: #ac8a62;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+// ___________________________________adaptive__________________________________________________
+
+@media (max-width: 900px) {
+    .Guest_Block {
+        visibility: visible;
+        width: 100%;
+        height: 50%;
+
+        img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .guest_field_leftside {
+            width: 50%;
+            height: 40%;
+            display: none;
+
+            h2 {
+                left: 15px;
+                font-size: 14px;
+                width: 80%;
+                height: 40%;
+                line-height: 28px;
+            }
+
+            p {
+                left: 15px;
+                top: 110px;
+                font-size: 10px;
+                width: 75%;
+                height: 40%;
+            }
+
+            button {
+                font-size: 10px;
+                text-align: center;
+                line-height: 0px;
+                letter-spacing: 0px;
+                font-weight: 600;
+                padding: 0px;
+                width: 20%;
+                height: 20px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+// ___________________________________________________________________________________________________
+
+@media (max-width: 1200px) {
+    .down_field {
+        visibility: visible;
+        justify-content: center;
+
+        .flex_block {
+            width: 400px;
+            margin-left: calc(25% - 400px / 2 - 0.5px);
+        }
+    }
+}

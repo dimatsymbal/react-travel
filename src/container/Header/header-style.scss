@@ -1,0 +1,185 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 76px;
+    background-color: #2b302a;
+    opacity: 0.95;
+    position: fixed;
+    z-index: 2;
+
+    .navbar {
+        width: 100%;
+        height: 76px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0px;
+
+        .leftside_navbar {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            margin-left: 15px;
+
+            .navbar_photo {
+                display: flex;
+                align-self: center;
+                width: 142px;
+                height: 26px;
+            }
+        }
+
+        .rightside_navbar {
+            width: 1000px;
+            height: 76px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .links_in_adaptive {
+                display: none;
+            }
+
+            .links_navbar {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 200;
+                width: 170px;
+                height: 76px;
+                display: flex;
+                align-content: center;
+                align-self: center;
+                justify-content: center;
+                padding-top: 25.5px;
+                color: #ffffff;
+                font-size: 17px;
+                text-decoration: none;
+                width: 170px;
+                height: 76px;
+            }
+            .links_navbar:hover {
+                color: #ac8a62;
+                transition: 0.5s;
+            }
+
+            .navbar_btn {
+                align-self: center;
+                background-color: #ac8a62;
+                font-size: 17px;
+                font-weight: 700;
+                width: 138px;
+                height: 100%;
+                border: 0;
+                color: #2b302a;
+                cursor: pointer;
+            }
+            .navbar_btn:hover {
+                background-color: #927757;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+// ___________________________________header_adaptive__________________________________________________
+
+@media (max-width: 900px) {
+    header {
+        visibility: visible;
+
+        .navbar {
+            width: 100%;
+            height: 76px;
+
+            .rightside_navbar {
+                height: 76px;
+                max-width: 700px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                justify-content: flex-end;
+
+                .links_in_adaptive {
+                    display: block;
+
+                    .burger_btn_header {
+                        width: 35px;
+                        height: 35px;
+                        align-self: center;
+                        margin-top: 23px;
+                        margin-right: 23px;
+                        background-color: #2b302a;
+                        border: 0;
+
+                        .bi {
+                            color: #ac8a62;
+                        }
+                    }
+                }
+
+                .links_navbar {
+                    display: none;
+                }
+
+                .navbar_btn {
+                    width: 105px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        visibility: visible;
+
+        .navbar {
+            width: 100%;
+            height: 76px;
+
+            .rightside_navbar {
+                height: 76px;
+                max-width: 700px;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                justify-content: flex-end;
+
+                .links_in_adaptive {
+                    display: block;
+
+                    .burger_btn_header {
+                        width: 35px;
+                        height: 35px;
+                        align-self: center;
+                        margin-top: 23px;
+                        margin-right: 23px;
+                        background-color: #2b302a;
+                        border: 0;
+
+                        .bi {
+                            color: #ac8a62;
+                        }
+                    }
+                }
+
+                .links_navbar {
+                    display: none;
+                }
+
+                .navbar_btn {
+                    width: 105px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

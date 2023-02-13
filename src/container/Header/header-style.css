@@ -1,0 +1,115 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 76px;
+  background-color: #2b302a;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 2;
+}
+header .navbar {
+  width: 100%;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+header .navbar .leftside_navbar {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin-left: 15px;
+}
+header .navbar .leftside_navbar .navbar_photo {
+  display: flex;
+  align-self: center;
+  width: 142px;
+  height: 26px;
+}
+header .navbar .rightside_navbar {
+  width: 750px;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+header .navbar .rightside_navbar .links_in_adaptive {
+  display: none;
+}
+header .navbar .rightside_navbar .links_navbar {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  width: 150px;
+  height: 76px;
+  text-align: center;
+  padding: 0 30px;
+  padding-top: 29.5px;
+}
+header .navbar .rightside_navbar .links_navbar:hover {
+  color: #ac8a62;
+  transition: 0.5s;
+}
+header .navbar .rightside_navbar .navbar_btn {
+  align-self: center;
+  background-color: #ac8a62;
+  font-size: 17px;
+  font-weight: 700;
+  width: 138px;
+  height: 100%;
+  border: 0;
+  color: #2b302a;
+  cursor: pointer;
+}
+header .navbar .rightside_navbar .navbar_btn:hover {
+  background-color: #927757;
+  transition: 0.5s;
+}
+
+@media (max-width: 900px) {
+  header {
+    visibility: visible;
+  }
+  header .navbar {
+    width: 100%;
+    height: 76px;
+  }
+  header .navbar .rightside_navbar {
+    height: 76px;
+    justify-content: flex-end;
+  }
+  header .navbar .rightside_navbar .links_in_adaptive {
+    display: block;
+  }
+  header .navbar .rightside_navbar .links_in_adaptive .burger_btn_header {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    margin-top: 23px;
+    margin-right: 23px;
+    background-color: #2b302a;
+    border: 0;
+  }
+  header .navbar .rightside_navbar .links_in_adaptive .burger_btn_header .bi {
+    color: #ac8a62;
+  }
+  header .navbar .rightside_navbar .links_navbar {
+    display: none;
+  }
+  header .navbar .rightside_navbar .navbar_btn {
+    width: 105px;
+    height: 100%;
+  }
+}/*# sourceMappingURL=header-style.css.map */
