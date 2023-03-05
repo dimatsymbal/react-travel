@@ -1,0 +1,193 @@
+.Guides_Page {
+    position: relative;
+    top: 76px;
+
+    .introduc_block {
+        width: 100%;
+        height: 520px;
+        background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger3-blog-subheader.jpg);
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            color: #e2e0dc;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+    }
+
+    .guides_page_cards {
+        width: 100%;
+        height: 2300px;
+        background-color: #e2e0dc;
+
+        .container {
+            width: 980px;
+            height: 2300px;
+
+            .Article_list__2 {
+                height: 2300px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .loc {
+                    visibility: hidden;
+
+                    .cart {
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+
+                        .favorite_btn {
+                            position: absolute;
+                            z-index: 1;
+                            top: 25px;
+                            right: 25px;
+                            border: 0px;
+                            padding: 4px 13px;
+                            border-radius: 20px;
+                            background-color: #272727;
+                            background-image: url('https://www.citypng.com/public/uploads/preview/-51611915675wmb5cgaf3d.png');
+                            background-size: 30%;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            color: white;
+                            cursor: pointer;
+                            width: 70px;
+                            height: 35px;
+                        }
+
+                        .photo_of_card_div img {
+                            height: 400px;
+                        }
+
+                        .card_body {
+                            height: 210px;
+                            background-color: white;
+
+                            .title_in_card {
+                                min-width: 335px;
+                                position: absolute;
+                                top: 75px;
+                                left: 20px;
+                                text-align: left;
+                                text-decoration: none;
+                                color: #504840;
+                                font-size: 24px;
+                                line-height: 34px;
+                                font-weight: bold;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+
+                            .hr {
+                                position: absolute;
+                                top: 120px;
+                                background-color: #504840;
+                                opacity: 0.2;
+                                width: 96%;
+                                height: 1px;
+                            }
+
+                            img {
+                                position: absolute;
+                                bottom: 50px;
+                                border-radius: 50px;
+                                left: 20px;
+                            }
+
+                            .author {
+                                text-decoration: none;
+                                position: absolute;
+                                bottom: 50px;
+                                left: 50px;
+                                color: #504840;
+                                font-size: 15px;
+                            }
+
+                            .month {
+                                position: absolute;
+                                bottom: 35px;
+                                left: 200px;
+                                color: #504840;
+                                font-size: 15px;
+                            }
+
+                            .date {
+                                position: absolute;
+                                bottom: 35px;
+                                left: 275px;
+                                color: #504840;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// __________________adaptive________________________________
+
+@media (max-width: 900px) {
+    .Guides_Page {
+        visibility: visible;
+
+        .introduc_block {
+            background-position: top;
+            background-size: 100%;
+            height: 350px;
+            align-items: flex-start;
+
+            h2 {
+                margin-top: 40px;
+                font-size: 30px;
+            }
+        }
+
+        .guides_page_cards {
+            margin-top: -185px;
+            width: 100%;
+            height: 1800px;
+
+            .container {
+                height: 1900px;
+                width: 390px;
+                display: flex;
+                justify-content: center;
+
+                .Article_list__2 {
+                    display: flex;
+                    align-items: center;
+                    height: 1600px;
+                    width: 100%;
+                    flex-direction: column;
+
+                    .cart {
+                        visibility: visible;
+                        width: 380px;
+                        max-height: 280px;
+                        left: calc(50% - 380px / 2 - 0.5px);
+
+                        .photo_of_card_div img {
+                            max-height: 280px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

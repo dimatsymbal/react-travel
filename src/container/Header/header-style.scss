@@ -11,7 +11,7 @@ header {
     background-color: #2b302a;
     opacity: 0.95;
     position: fixed;
-    z-index: 2;
+    z-index: 114;
 
     .navbar {
         width: 100%;
@@ -42,7 +42,6 @@ header {
             height: 76px;
             display: flex;
             justify-content: space-between;
-            text-align: center;
 
             .links_in_adaptive {
                 display: none;
@@ -50,21 +49,28 @@ header {
 
             .links_navbar {
                 font-family: 'Montserrat', sans-serif;
-                font-weight: 200;
+                font-weight: 300;
                 width: 170px;
-                height: 76px;
-                display: flex;
-                align-content: center;
-                align-self: center;
-                justify-content: center;
-                padding-top: 25.5px;
+                padding-top: 25px;
                 color: #ffffff;
                 font-size: 17px;
                 text-decoration: none;
-                width: 170px;
-                height: 76px;
             }
             .links_navbar:hover {
+                color: #ac8a62;
+                transition: 0.5s;
+            }
+
+            .link {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                width: 170px;
+                color: #ffffff;
+                font-size: 17px;
+                text-decoration: none;
+            }
+
+            .link:hover {
                 color: #ac8a62;
                 transition: 0.5s;
             }
@@ -93,6 +99,7 @@ header {
 @media (max-width: 900px) {
     header {
         visibility: visible;
+        width: 100%;
 
         .navbar {
             width: 100%;
@@ -100,7 +107,7 @@ header {
 
             .rightside_navbar {
                 height: 76px;
-                max-width: 700px;
+                max-width: 200px;
                 position: absolute;
                 top: 0px;
                 right: 0px;

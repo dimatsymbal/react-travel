@@ -1,0 +1,151 @@
+.About_Page {
+    position: relative;
+    top: 76px;
+
+    .introduc_block {
+        width: 100%;
+        height: 660px;
+        background-color: #504840;
+        background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger-about-guy.jpg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        position: relative;
+
+        .about_page_intr_block_h2 {
+            max-width: 626px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 64px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            color: #e2e0dc;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        p {
+            width: 426px;
+            position: absolute;
+            left: calc(50% - 426px / 2 - 0.1px);
+            bottom: 70px;
+            color: #e2e0dc;
+            font-size: 15px;
+            line-height: 27px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+    }
+
+    .under_introduce {
+        width: 100%;
+        height: 700px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .left {
+            width: 50%;
+            height: 700px;
+            background-color: #504840;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .left_content {
+                width: 370px;
+                height: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h2 {
+                    margin-top: 20px;
+                    font-size: 38px;
+                    line-height: 47px;
+                    font-weight: 700;
+                    letter-spacing: 0px;
+                    color: #fff;
+                    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+                }
+
+                p {
+                    margin-top: 20px;
+                    font-size: 15px;
+                    line-height: 27px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                    color: #fff;
+                    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+                }
+
+                .discover_more {
+                    margin-top: 20px;
+                    border-bottom: 1px solid #ac8a62;
+                    text-decoration: none;
+                    width: 140px;
+                    color: #fff;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 700px;
+            background-color: #504840;
+            background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger-about-mountains.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+
+// __________________adaptive________________________________
+
+@media (max-width: 900px) {
+    .About_Page {
+        visibility: visible;
+
+        .introduc_block {
+            background-position: top;
+            background-size: 100%;
+            height: 350px;
+            align-items: flex-start;
+
+            .about_page_intr_block_h2 {
+                margin: auto;
+                font-size: 20px;
+                line-height: normal;
+            }
+            p {
+                margin: auto;
+            }
+        }
+
+        .under_introduce {
+            display: flex;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                display: none;
+            }
+        }
+    }
+}

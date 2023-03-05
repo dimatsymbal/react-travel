@@ -1,4 +1,4 @@
-type Article = {
+export type Article = {
     id: number
     image: string
     knopka: string
@@ -36,6 +36,42 @@ const ArticleArrey: Article[] = [
         month: 'December',
         date: 28,
     },
+    // {
+    //     id: 4,
+    //     image: '/images/blogger-blog-guides-1.jpg',
+    //     knopka: 'Guides',
+    //     title: 'Ut sodales nunc eu',
+    //     author: 'Muffin Group',
+    //     month: 'June',
+    //     date: 11,
+    // },
+    // {
+    //     id: 5,
+    //     image: '/images/blogger-blog-guides-2.jpg',
+    //     knopka: 'Guides',
+    //     title: 'Maecenas congue augue',
+    //     author: 'Muffin Group',
+    //     month: 'July',
+    //     date: 14,
+    // },
+    // {
+    //     id: 6,
+    //     image: '/images/blogger-blog-guides-3.jpg',
+    //     knopka: 'Guides',
+    //     title: 'Aliquam mollis purus',
+    //     author: 'Muffin Group',
+    //     month: 'August',
+    //     date: 22,
+    // },
 ]
+
+export const getProductsObject = (array: Article[]) =>
+    array.reduce(
+        (object, product) => ({
+            ...object,
+            [product.id]: product,
+        }),
+        {}
+    )
 
 export default ArticleArrey

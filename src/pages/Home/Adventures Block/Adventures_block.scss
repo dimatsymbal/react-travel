@@ -7,9 +7,9 @@
 
 .Adventures_block {
     width: 100%;
-    min-height: 1080px;
+    height: 1040px;
     background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger3-home-grren-bg.png);
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
     justify-content: center;
@@ -49,10 +49,10 @@
         .discover_more {
             display: flex;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 40px;
             border-bottom: 1px solid #ac8a62;
             text-decoration: none;
-            width: 130px;
+            width: 140px;
             margin-left: calc(50% - 130px / 2 - 0.2px);
             color: #fff;
             font-size: 18px;
@@ -68,11 +68,13 @@
 @media (max-width: 900px) {
     .Adventures_block {
         width: 100%;
-        height: 1950px;
+        height: 1650px;
+        display: flex;
+        flex-direction: column;
 
         .container {
-            width: 80%;
-            height: 1800px;
+            width: 100%;
+            height: 1650px;
 
             .adventures_logo {
                 margin-top: 100px;
@@ -89,6 +91,12 @@
             .title {
                 font-size: 28px;
                 width: 100%;
+            }
+
+            .discover_more {
+                margin-top: -30px;
+                width: 140px;
+                margin-left: calc(50% - 130px / 2 - 0.2px);
             }
         }
     }

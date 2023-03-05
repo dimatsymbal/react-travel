@@ -1,0 +1,19 @@
+.Slider_Block {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 758px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #efeeea;
+}
+
+/* ___________________________________adaptive__________________________________________________ */
+
+@media (max-width: 900px) {
+    .Slider_Block {
+        visibility: visible;
+        width: 100%;
+        height: 680px;
+    }
+}

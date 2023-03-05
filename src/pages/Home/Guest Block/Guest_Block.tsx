@@ -5,7 +5,7 @@ type Props = {}
 const Guest_Block = (props: Props) => {
     return (
         <div className="Guest_Block">
-            <img src="./images/guest_block_bg.jpg" alt="guest_block_bg" />
+            <img src="./images/guest_block_bg2.jpg" alt="guest_block_bg" />
 
             <div className="guest_field_leftside">
                 <h2>Hot air baloon ride at the Pointy Peak Mountains.</h2>

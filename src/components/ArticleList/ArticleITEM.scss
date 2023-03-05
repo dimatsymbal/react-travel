@@ -6,25 +6,31 @@
     border: 0;
     border-radius: 0px;
 
-    .favorite_butttttton {
+    .favorite_btn {
         position: absolute;
-        z-index: 4000;
+        z-index: 1;
         top: 25px;
         right: 25px;
         border: 0px;
         padding: 4px 13px;
         border-radius: 20px;
         background-color: #272727;
+        background-image: url('https://www.citypng.com/public/uploads/preview/-51611915675wmb5cgaf3d.png');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
         color: white;
         cursor: pointer;
         width: 70px;
         height: 35px;
+    }
 
-        .bi {
-            font-weight: bold;
-            width: 15px;
-            height: 15px;
-        }
+    .favorite_btn:hover {
+        transition: 0.4s;
+        background-image: url('https://www.citypng.com/public/uploads/small/51611909014v8cbncefiunsjgxz6zahofjyedbx1jz20yngjomjktdobtraht1wrrocbcmo16t9rnxlax9js2pla6ssdoaz0zgn8ydjzrk15vbn.png');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .photo_of_card_div img {

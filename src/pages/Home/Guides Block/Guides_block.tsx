@@ -2,8 +2,10 @@ import Guides_logo from 'components/guides_logo/guides_logo'
 import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_block.scss'
 
-type Props = {}
-const Guides_block = (props: Props) => {
+type Props = {
+    addGuidesToCart: (id: number) => void
+}
+const Guides_block = ({ addGuidesToCart }: Props) => {
     return (
         <div className="Guides_block">
             <div className="container">
@@ -13,7 +15,7 @@ const Guides_block = (props: Props) => {
                     Lorem ipsum dolor sit amet tetur adipis icing elit
                 </h2>
 
-                <ArticleList2 />
+                <ArticleList2 addGuidesToCart={addGuidesToCart} />
             </div>
         </div>
     )

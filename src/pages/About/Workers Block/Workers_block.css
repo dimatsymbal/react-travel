@@ -1,0 +1,22 @@
+.Workers_block {
+    width: 100%;
+    min-height: 800px;
+    background-color: #e2e0dc;
+}
+
+.Workers_block_title {
+    width: 248px;
+    padding-top: 120px;
+    margin: auto;
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #504840;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.workers_list_div {
+    display: flex;
+    justify-content: center;
+}

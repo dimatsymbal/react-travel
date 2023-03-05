@@ -1,4 +1,5 @@
 import './header-style.scss'
+import { Link } from 'react-router-dom'
 ;<style>
     @import
     url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap');
@@ -18,22 +19,34 @@ const Header = (props: Props) => {
                 </div>
                 <div className="rightside_navbar">
                     <a className="links_navbar" href="#">
-                        Home
+                        <Link className="link" to="/">
+                            Home
+                        </Link>
                     </a>
                     <a className="links_navbar" href="#">
-                        About
+                        <Link className="link" to="/about">
+                            About
+                        </Link>
                     </a>
                     <a className="links_navbar" href="#">
-                        Favorites
+                        <Link className="link" to="/favorites">
+                            Favorites
+                        </Link>
                     </a>
                     <a className="links_navbar" href="#">
-                        Adventures
+                        <Link className="link" to="/adventures">
+                            Adventures
+                        </Link>
                     </a>
                     <a className="links_navbar" href="#">
-                        Places
+                        <Link className="link" to="/places">
+                            Places
+                        </Link>
                     </a>
                     <a className="links_navbar" href="#">
-                        Guides
+                        <Link className="link" to="/guides">
+                            Guides
+                        </Link>
                     </a>
 
                     <div className="links_in_adaptive">

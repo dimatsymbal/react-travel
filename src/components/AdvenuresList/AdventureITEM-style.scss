@@ -3,7 +3,7 @@
     height: 585px;
     position: relative;
 
-    .favorite_butttttton {
+    .favorite_btn {
         position: absolute;
         z-index: 4000;
         top: 25px;
@@ -12,16 +12,23 @@
         padding: 4px 13px;
         border-radius: 20px;
         background-color: #272727;
+        background-image: url('https://www.citypng.com/public/uploads/preview/-51611915675wmb5cgaf3d.png');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
         color: white;
         cursor: pointer;
         width: 70px;
         height: 35px;
+        z-index: 2;
+    }
 
-        .bi {
-            font-weight: bold;
-            width: 15px;
-            height: 15px;
-        }
+    .favorite_btn:hover {
+        transition: 0.4s;
+        background-image: url('https://www.citypng.com/public/uploads/small/51611909014v8cbncefiunsjgxz6zahofjyedbx1jz20yngjomjktdobtraht1wrrocbcmo16t9rnxlax9js2pla6ssdoaz0zgn8ydjzrk15vbn.png');
+        background-size: 30%;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .card_body {
@@ -47,12 +54,17 @@
                 padding: 3px 12px;
                 border-radius: 20px;
                 font-weight: 300;
-                width: 120px;
-                height: 33px;
+                max-width: 120px;
+                max-height: 33px;
                 border: 0;
                 cursor: pointer;
+
+                .link {
+                    color: rgba(241, 235, 235, 0.818);
+                    text-decoration: none;
+                }
             }
-            button:hover {
+            .link:hover {
                 color: rgb(246, 246, 246);
                 transition: 0.4s;
             }
@@ -89,7 +101,7 @@
             left: 20px;
             background-color: #d6d2ce;
             opacity: 0.2;
-            width: 310px;
+            max-width: 310px;
             height: 1px;
         }
 
@@ -117,6 +129,28 @@
             left: 170px;
             font-size: 15px;
             text-decoration: none;
+        }
+    }
+}
+
+// __________________________________________________________________________________________________
+
+@media (max-width: 900px) {
+    .AdventureITEM {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .AdventureITEM {
+        width: 100%;
+        position: relative;
+        left: calc(50% - 100% / 2 - 0.5px);
+
+        .card_body {
+            width: 90%;
+            position: relative;
+            left: calc(50% - 90% / 2 - 0.5px);
         }
     }
 }

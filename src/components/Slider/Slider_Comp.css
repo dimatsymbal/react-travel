@@ -1,0 +1,91 @@
+.carusel {
+    width: 100%;
+    height: 658px;
+}
+
+.carusel_item {
+    width: 100%;
+    height: 758px;
+}
+
+.carusel_img {
+    width: 100%;
+    height: 657px;
+}
+
+.carusel_caption {
+    position: relative;
+    left: calc(75% - 490px / 2 - 0.1px);
+    top: -350px;
+    z-index: 1412313412414124124;
+    width: 490px;
+    padding: 35px 3% 15px;
+    height: 458px;
+    /* background-color: black; */
+    background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger-quotes-bg2.png);
+}
+
+.caption_title {
+    color: #504840;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.caption_img {
+    width: 80px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 43px;
+    left: 45px;
+}
+
+.caption_author {
+    color: #504840;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    position: absolute;
+    bottom: 70px;
+    left: 160px;
+}
+
+.caption_text_under_author {
+    color: #504840;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    position: absolute;
+    bottom: 40px;
+    left: 160px;
+}
+
+/* ___________________________________adaptive__________________________________________________ */
+
+@media (max-width: 900px) {
+    .carusel {
+        visibility: visible;
+        width: 100%;
+        height: 30%;
+    }
+
+    .carusel_caption {
+        display: block;
+        width: 390px;
+        left: calc(50% - 390px / 2 - 0.1px);
+        z-index: 21313;
+        height: 458px;
+        top: -40px;
+    }
+
+    .carusel_img {
+        width: 100%;
+        height: 30%;
+    }
+}

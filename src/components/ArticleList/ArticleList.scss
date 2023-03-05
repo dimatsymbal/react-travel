@@ -1,8 +1,11 @@
 .Article_list {
     width: 980px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
     .Article_list {
         width: 100%;
         position: relative;
