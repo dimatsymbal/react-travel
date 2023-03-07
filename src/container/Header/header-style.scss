@@ -48,7 +48,7 @@ header {
                 display: none;
             }
 
-            .navbar_btn {
+            .btn_join_us {
                 align-self: center;
                 background-color: #ac8a62;
                 font-size: 17px;
@@ -57,9 +57,13 @@ header {
                 height: 100%;
                 border: 0;
                 color: #2b302a;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
             }
-            .navbar_btn:hover {
+            .btn_join_us:hover {
                 background-color: #927757;
                 transition: 0.5s;
             }

@@ -71,7 +71,9 @@ const Header = (props: Props) => {
                         </div>
                     </div>
 
-                    <button className="navbar_btn">Join Us</button>
+                    <Link className="btn_join_us" to="/joinus">
+                        Join Us
+                    </Link>
                 </div>
             </div>
         </header>
