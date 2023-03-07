@@ -3,9 +3,9 @@ import './Places_block.scss'
 import ArticleList from 'components/ArticleList/ArticleList'
 
 type Props = {
-    addPlacesToCart: (countFinal: number, priceFinal: number) => void
+    addAricleToFav: (id: number) => void
 }
-const Places_block = ({ addPlacesToCart }: Props) => {
+const Places_block = ({ addAricleToFav }: Props) => {
     return (
         <div className="Places_block">
             <div className="container">
@@ -15,7 +15,7 @@ const Places_block = ({ addPlacesToCart }: Props) => {
                     Lorem ipsum dolor sit amet tetur adipis icing elit
                 </h2>
 
-                <ArticleList addPlacesToCart={addPlacesToCart} />
+                <ArticleList addAricleToFav={addAricleToFav} />
             </div>
         </div>
     )

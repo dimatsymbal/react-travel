@@ -1,4 +1,5 @@
 import './header-style.scss'
+import Menu_item from 'components/Menu_item/Menu_item'
 import { Link } from 'react-router-dom'
 ;<style>
     @import
@@ -18,53 +19,56 @@ const Header = (props: Props) => {
                     />
                 </div>
                 <div className="rightside_navbar">
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/">
-                            Home
-                        </Link>
-                    </a>
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/about">
-                            About
-                        </Link>
-                    </a>
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/favorites">
-                            Favorites
-                        </Link>
-                    </a>
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/adventures">
-                            Adventures
-                        </Link>
-                    </a>
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/places">
-                            Places
-                        </Link>
-                    </a>
-                    <a className="links_navbar" href="#">
-                        <Link className="link" to="/guides">
-                            Guides
-                        </Link>
-                    </a>
+                    <Menu_item to="/">Home</Menu_item>
+                    <Menu_item to="/about">About</Menu_item>
+                    <Menu_item to="/favorites">Favorites</Menu_item>
+                    <Menu_item to="/adventures">Adventures</Menu_item>
+                    <Menu_item to="/places">Places</Menu_item>
+                    <Menu_item to="/guides">Guides</Menu_item>
 
                     <div className="links_in_adaptive">
-                        <button className="burger_btn_header">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="26"
-                                height="26"
-                                fill="currentColor"
-                                className="bi bi-list"
-                                viewBox="0 0 16 16"
+                        <div className="dropdown">
+                            <button
+                                className="btn_dropdown dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                             >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                                />
-                            </svg>
-                        </button>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    className="bi bi-list"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                                    />
+                                </svg>
+                            </button>
+                            <ul className="dropdown-menu">
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/about">About</Link>
+                                </li>
+                                <li>
+                                    <Link to="/favorites">Favorites</Link>
+                                </li>
+                                <li>
+                                    <Link to="/adventures">Adventures</Link>
+                                </li>
+                                <li>
+                                    <Link to="/places">Places</Link>
+                                </li>
+                                <li>
+                                    <Link to="/guides">Guides</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <button className="navbar_btn">Join Us</button>

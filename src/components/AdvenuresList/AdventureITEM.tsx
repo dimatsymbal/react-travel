@@ -9,8 +9,18 @@ type Props = {
     paragraph: string
     author: string
     month: string
+    addAricleToFav: (id: number) => void
 }
-const AdventureITEM = (props: Props) => {
+const AdventureITEM = ({
+    id,
+    image,
+    knopka,
+    title,
+    paragraph,
+    author,
+    month,
+    addAricleToFav,
+}: Props) => {
     const [active, setActive] = useState(false)
     const handleClick = () => {
         setActive(!active)
@@ -20,7 +30,7 @@ const AdventureITEM = (props: Props) => {
         <div className="AdventureITEM">
             <button
                 className="favorite_btn"
-                onClick={handleClick}
+                onClick={() => addAricleToFav(id)}
                 style={{
                     backgroundImage: active
                         ? `url("https://www.citypng.com/public/uploads/small/51611909014v8cbncefiunsjgxz6zahofjyedbx1jz20yngjomjktdobtraht1wrrocbcmo16t9rnxlax9js2pla6ssdoaz0zgn8ydjzrk15vbn.png")`
@@ -28,20 +38,20 @@ const AdventureITEM = (props: Props) => {
                 }}
             ></button>
             <div className="photo_of_card_div">
-                <img className="photo_of_card" src={props.image} alt="image" />
+                <img className="photo_of_card" src={image} alt="image" />
             </div>
             <div className="card_body">
                 <a href="#">
                     <button>
                         <Link className="link" to="/adventures">
-                            {props.knopka}
+                            {knopka}
                         </Link>
                     </button>
                 </a>
                 <a className="title_in_card" href="#">
-                    {props.title}
+                    {title}
                 </a>
-                <p>{props.paragraph}</p>
+                <p>{paragraph}</p>
 
                 <div className="hr"></div>
 
@@ -50,7 +60,7 @@ const AdventureITEM = (props: Props) => {
                     alt="person"
                 />
                 <a href="#" className="author">
-                    {props.author}
+                    {author}
                 </a>
 
                 <p className="month">
@@ -65,7 +75,7 @@ const AdventureITEM = (props: Props) => {
                         <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                     </svg>{' '}
-                    {props.month}
+                    {month}
                 </p>
             </div>
         </div>

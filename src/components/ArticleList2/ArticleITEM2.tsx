@@ -9,7 +9,7 @@ type Props = {
     author: string
     month: string
     date: number
-    addGuidesToCart: (id: number) => void
+    addAricleToFav: (countFinal: number, priceFinal: number) => void
 }
 const ArticleITEM2 = ({
     id,
@@ -19,8 +19,9 @@ const ArticleITEM2 = ({
     author,
     month,
     date,
-    addGuidesToCart,
+    addAricleToFav,
 }: Props) => {
+    const [count, setCount] = useState<number>(1)
     const [active, setActive] = useState(false)
     const handleClick = () => {
         setActive(!active)
@@ -30,7 +31,7 @@ const ArticleITEM2 = ({
         <div className="cart">
             <button
                 className="favorite_btn"
-                onClick={() => addGuidesToCart(id)}
+                onClick={() => addAricleToFav(id, count)}
                 style={{
                     backgroundImage: active
                         ? `url("https://www.citypng.com/public/uploads/small/51611909014v8cbncefiunsjgxz6zahofjyedbx1jz20yngjomjktdobtraht1wrrocbcmo16t9rnxlax9js2pla6ssdoaz0zgn8ydjzrk15vbn.png")`

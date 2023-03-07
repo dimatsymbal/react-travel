@@ -1,26 +1,29 @@
 import AdventureITEM from './AdventureITEM'
-import AdventuresArrey from 'Utils/AdventuresArrey'
+import ArticleArrey from 'Utils/ArticleArrey'
 import './AdventureComp.scss'
-type Props = {}
+type Props = {
+    addAricleToFav: (id: number) => void
+}
 
-const Adventures_Comp = ({}: Props) => {
+const Adventures_Comp = ({ addAricleToFav }: Props) => {
     return (
         <div className="Adventures_Comp">
-            {AdventuresArrey.map(
-                ({ id, image, knopka, title, paragraph, author, month }) => (
-                    <div className="loc" key={id}>
-                        <AdventureITEM
-                            image={image}
-                            knopka={knopka}
-                            title={title}
-                            paragraph={paragraph}
-                            author={author}
-                            month={month}
-                            id={0}
-                        />
-                    </div>
-                )
-            )}
+            {ArticleArrey.filter(
+                (article) => article.category === 'adventures'
+            ).map(({ id, image, knopka, title, paragraph, author, month }) => (
+                <div className="loc" key={id}>
+                    <AdventureITEM
+                        image={image}
+                        knopka={knopka}
+                        title={title}
+                        paragraph={paragraph}
+                        author={author}
+                        month={month}
+                        id={id}
+                        addAricleToFav={addAricleToFav}
+                    />
+                </div>
+            ))}
         </div>
     )
 }

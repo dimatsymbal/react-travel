@@ -6,6 +6,8 @@ export type Article = {
     author: string
     month: string
     date: number
+    category: string
+    paragraph: string
 }
 
 const ArticleArrey: Article[] = [
@@ -17,6 +19,8 @@ const ArticleArrey: Article[] = [
         author: 'Muffin Group',
         month: 'October',
         date: 22,
+        paragraph: '.',
+        category: 'places',
     },
     {
         id: 2,
@@ -26,6 +30,8 @@ const ArticleArrey: Article[] = [
         author: 'Muffin Group',
         month: 'November',
         date: 29,
+        paragraph: '.',
+        category: 'places',
     },
     {
         id: 3,
@@ -35,34 +41,66 @@ const ArticleArrey: Article[] = [
         author: 'Muffin Group',
         month: 'December',
         date: 28,
+        paragraph: '.',
+        category: 'places',
     },
-    // {
-    //     id: 4,
-    //     image: '/images/blogger-blog-guides-1.jpg',
-    //     knopka: 'Guides',
-    //     title: 'Ut sodales nunc eu',
-    //     author: 'Muffin Group',
-    //     month: 'June',
-    //     date: 11,
-    // },
-    // {
-    //     id: 5,
-    //     image: '/images/blogger-blog-guides-2.jpg',
-    //     knopka: 'Guides',
-    //     title: 'Maecenas congue augue',
-    //     author: 'Muffin Group',
-    //     month: 'July',
-    //     date: 14,
-    // },
-    // {
-    //     id: 6,
-    //     image: '/images/blogger-blog-guides-3.jpg',
-    //     knopka: 'Guides',
-    //     title: 'Aliquam mollis purus',
-    //     author: 'Muffin Group',
-    //     month: 'August',
-    //     date: 22,
-    // },
+    {
+        id: 4,
+        image: '/images/blogger-blog-guides-1.jpg',
+        knopka: 'Guides',
+        title: 'Ut sodales nunc eu',
+        author: 'Muffin Group',
+        month: 'June',
+        date: 11,
+        paragraph: '.',
+        category: 'guides',
+    },
+    {
+        id: 5,
+        image: '/images/blogger-blog-guides-2.jpg',
+        knopka: 'Guides',
+        title: 'Maecenas congue augue',
+        author: 'Muffin Group',
+        month: 'July',
+        date: 14,
+        paragraph: '.',
+        category: 'guides',
+    },
+    {
+        id: 6,
+        image: '/images/blogger-blog-guides-3.jpg',
+        knopka: 'Guides',
+        title: 'Aliquam mollis purus',
+        author: 'Muffin Group',
+        month: 'August',
+        date: 22,
+        paragraph: '.',
+        category: 'guides',
+    },
+    {
+        id: 7,
+        image: '/images/blogger-blog-adventure2.jpg',
+        knopka: 'Adventures',
+        title: 'Donec tempor pur',
+        paragraph:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquum.',
+        author: 'Muffin Group',
+        month: 'October 23, 2019',
+        date: 0,
+        category: 'adventures',
+    },
+    {
+        id: 8,
+        image: '/images/blogger-blog-adventure1.jpg',
+        knopka: 'Adventures',
+        title: 'Fusce nec orcio',
+        paragraph:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquum.',
+        author: 'Muffin Group',
+        month: 'November 23, 2019',
+        date: 0,
+        category: 'adventures',
+    },
 ]
 
 export const getProductsObject = (array: Article[]) =>

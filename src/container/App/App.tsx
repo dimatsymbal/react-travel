@@ -11,31 +11,17 @@ import Home from 'pages/Home/Home'
 import { useState } from 'react'
 type Props = {}
 
-type productsInFav = {
-    [id: number]: number
-}
-type productsInFav2 = {
+type articlesInFav = {
     [id: number]: number
 }
 
 const App = (props: Props) => {
-    const [productsInFav, setProductsToFav] = useState<productsInFav>({
+    const [articlesInFav, setArticlesInFav] = useState<articlesInFav>({
         1: 1,
     })
 
-    const addPlacesToCart = (id: number) => {
-        setProductsToFav((prevState) => ({
-            ...prevState,
-            [id]: prevState[id],
-        }))
-    }
-
-    const [productsInFav2, setProductsToFav2] = useState<productsInFav2>({
-        4: 1,
-    })
-
-    const addGuidesToCart = (id: number) => {
-        setProductsToFav2((prevState) => ({
+    const addAricleToFav = (id: number) => {
+        setArticlesInFav((prevState) => ({
             ...prevState,
             [id]: prevState[id],
         }))
@@ -47,28 +33,26 @@ const App = (props: Props) => {
             <Routes>
                 <Route
                     path="/"
-                    element={
-                        <Home
-                            addPlacesToCart={addPlacesToCart}
-                            addGuidesToCart={addGuidesToCart}
-                        />
-                    }
+                    element={<Home addAricleToFav={addAricleToFav} />}
                 />
                 <Route
                     path="favorites"
-                    element={
-                        <Favorites
-                            productsInFav={productsInFav}
-                            productsInFav2={productsInFav2}
-                        />
-                    }
+                    element={<Favorites articlesInFav={articlesInFav} />}
                 />
                 <Route path="about" element={<About_Page />} />
-                <Route path="adventures" element={<Adventures_Page />} />
-                <Route path="places" element={<Places_Page />} />
+                <Route
+                    path="adventures"
+                    element={
+                        <Adventures_Page addAricleToFav={addAricleToFav} />
+                    }
+                />
+                <Route
+                    path="places"
+                    element={<Places_Page addAricleToFav={addAricleToFav} />}
+                />
                 <Route
                     path="guides"
-                    element={<Guides_Page addGuidesToCart={addGuidesToCart} />}
+                    element={<Guides_Page addAricleToFav={addAricleToFav} />}
                 />
             </Routes>
             <Footer />

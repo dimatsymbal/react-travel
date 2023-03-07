@@ -1,0 +1,26 @@
+.links_navbar {
+    text-decoration: none;
+
+    .menu_item {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        width: 170px;
+        color: #ffffff;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    .menu_item:hover {
+        color: #ac8a62;
+        transition: 0.5s;
+    }
+
+    .menu_item_active {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        width: 170px;
+        color: #ac8a62;
+        font-size: 17px;
+        text-decoration: none;
+    }
+}

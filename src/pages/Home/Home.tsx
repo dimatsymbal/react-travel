@@ -5,17 +5,16 @@ import Guest_Block from './Guest Block/Guest_Block'
 import Adventures_block from './Adventures Block/Adventures_block'
 import Slider_Block from './Slider Block/Slider_Block'
 type Props = {
-    addPlacesToCart: (id: number) => void
-    addGuidesToCart: (id: number) => void
+    addAricleToFav: (id: number) => void
 }
-const Home = ({ addPlacesToCart, addGuidesToCart }: Props) => {
+const Home = ({ addAricleToFav }: Props) => {
     return (
         <>
             <Guest_Block />
-            <Adventures_block />
+            <Adventures_block addAricleToFav={addAricleToFav} />
             <Slider_Block />
-            <Places_block addPlacesToCart={addPlacesToCart} />
-            <Guides_block addGuidesToCart={addGuidesToCart} />
+            <Places_block addAricleToFav={addAricleToFav} />
+            <Guides_block addAricleToFav={addAricleToFav} />
             <View_Block />
         </>
     )

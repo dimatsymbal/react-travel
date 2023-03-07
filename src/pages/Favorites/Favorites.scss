@@ -1,5 +1,4 @@
 .favorites_page {
-    height: 100%;
     background-color: #e2e0dc;
 
     .introduc_block {
@@ -31,6 +30,38 @@
 
         .container {
             width: 980px;
+        }
+    }
+}
+
+// __________________adaptive________________________________
+
+@media (max-width: 900px) {
+    .favorites_page {
+        background-color: #e2e0dc;
+
+        .introduc_block {
+            background-position: top;
+            background-size: 100%;
+            background-image: url(https://i.pinimg.com/564x/35/f2/00/35f200aabd187bf9bd98b025e7d83d11.jpg);
+            height: 350px;
+            align-items: flex-start;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .favorite_cards {
+            width: 100%;
+
+            .container {
+                width: 100%;
+            }
         }
     }
 }

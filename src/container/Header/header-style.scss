@@ -42,37 +42,10 @@ header {
             height: 76px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             .links_in_adaptive {
                 display: none;
-            }
-
-            .links_navbar {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 300;
-                width: 170px;
-                padding-top: 25px;
-                color: #ffffff;
-                font-size: 17px;
-                text-decoration: none;
-            }
-            .links_navbar:hover {
-                color: #ac8a62;
-                transition: 0.5s;
-            }
-
-            .link {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 300;
-                width: 170px;
-                color: #ffffff;
-                font-size: 17px;
-                text-decoration: none;
-            }
-
-            .link:hover {
-                color: #ac8a62;
-                transition: 0.5s;
             }
 
             .navbar_btn {
@@ -115,18 +88,34 @@ header {
 
                 .links_in_adaptive {
                     display: block;
+                    margin-right: 40px;
 
-                    .burger_btn_header {
-                        width: 35px;
-                        height: 35px;
-                        align-self: center;
-                        margin-top: 23px;
-                        margin-right: 23px;
-                        background-color: #2b302a;
-                        border: 0;
+                    .dropdown {
+                        width: 40px;
+                        height: 40px;
 
-                        .bi {
-                            color: #ac8a62;
+                        .btn_dropdown {
+                            background-color: #ac8a62;
+                            color: #2b302a;
+                            width: 40px;
+                            height: 40px;
+                            border: 0px;
+                            border-radius: 0px;
+                        }
+
+                        .dropdown-menu {
+                            background-color: #2b302a;
+                            border: 0px;
+                            border-radius: 0px;
+
+                            a {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 300;
+                                width: 170px;
+                                color: #ffffff;
+                                font-size: 17px;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }

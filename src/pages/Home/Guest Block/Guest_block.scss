@@ -178,6 +178,18 @@
                 position: absolute;
             }
         }
+
+        .down_field {
+            visibility: visible;
+            display: flex;
+            justify-content: center;
+
+            .flex_block {
+                width: 200px;
+                margin-left: calc(50% - 200px / 2 - 0.5px);
+                margin: 0px;
+            }
+        }
     }
 }
 

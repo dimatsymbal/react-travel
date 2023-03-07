@@ -4,28 +4,28 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ArticleArrey from 'Utils/ArticleArrey'
 
 type Props = {
-    addPlacesToCart: (countFinal: number, priceFinal: number) => void
+    addAricleToFav: (id: number) => void
 }
 
-function ArticleList({ addPlacesToCart }: Props) {
+function ArticleList({ addAricleToFav }: Props) {
     return (
         <div className="Article_list">
-            {ArticleArrey.map(
-                ({ id, image, knopka, title, author, month, date }) => (
-                    <div className="loc" key={id}>
-                        <ArticleITEM
-                            id={id}
-                            image={image}
-                            knopka={knopka}
-                            title={title}
-                            author={author}
-                            month={month}
-                            date={date}
-                            addPlacesToCart={addPlacesToCart}
-                        />
-                    </div>
-                )
-            )}
+            {ArticleArrey.filter(
+                (article) => article.category === 'places'
+            ).map(({ id, image, knopka, title, author, month, date }) => (
+                <div className="loc" key={id}>
+                    <ArticleITEM
+                        id={id}
+                        image={image}
+                        knopka={knopka}
+                        title={title}
+                        author={author}
+                        month={month}
+                        date={date}
+                        addAricleToFav={addAricleToFav}
+                    />
+                </div>
+            ))}
         </div>
     )
 }

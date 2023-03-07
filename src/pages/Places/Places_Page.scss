@@ -162,15 +162,16 @@
             height: 1800px;
 
             .container {
-                height: 1900px;
+                height: 1700px;
                 width: 390px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
 
                 .Article_list {
+                    margin-top: -115px;
                     display: flex;
-                    align-items: center;
-                    height: 1600px;
+                    align-items: flex-start;
+                    height: 1700px;
                     width: 100%;
                     flex-direction: column;
 
