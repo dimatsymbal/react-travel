@@ -1,5 +1,5 @@
 import './ArticleITEM2.scss'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 type Props = {
     id: number
@@ -9,7 +9,7 @@ type Props = {
     author: string
     month: string
     date: number
-    addAricleToFav: (countFinal: number, priceFinal: number) => void
+    addAricleToFav: (id: number) => void
 }
 const ArticleITEM2 = ({
     id,
@@ -31,7 +31,10 @@ const ArticleITEM2 = ({
         <div className="cart">
             <button
                 className="favorite_btn"
-                onClick={() => addAricleToFav(id, count)}
+                onClick={() => {
+                    addAricleToFav(id)
+                    handleClick()
+                }}
                 style={{
                     backgroundImage: active
                         ? `url("https://www.citypng.com/public/uploads/small/51611909014v8cbncefiunsjgxz6zahofjyedbx1jz20yngjomjktdobtraht1wrrocbcmo16t9rnxlax9js2pla6ssdoaz0zgn8ydjzrk15vbn.png")`

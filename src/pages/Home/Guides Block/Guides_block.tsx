@@ -3,7 +3,7 @@ import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_block.scss'
 
 type Props = {
-    addAricleToFav: (countFinal: number, priceFinal: number) => void
+    addAricleToFav: (id: number) => void
 }
 const Guides_block = ({ addAricleToFav }: Props) => {
     return (

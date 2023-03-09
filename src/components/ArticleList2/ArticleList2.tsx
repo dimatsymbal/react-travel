@@ -4,7 +4,7 @@ import './AricleList2.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 type Props = {
-    addAricleToFav: (countFinal: number, priceFinal: number) => void
+    addAricleToFav: (id: number) => void
 }
 
 const ArticleList2 = ({ addAricleToFav }: Props) => {
