@@ -1,0 +1,155 @@
+.Registration {
+    width: 100%;
+    height: 700px;
+    background-color: #443e3b;
+    display: flex;
+    justify-content: center;
+
+    .container_Registration {
+        width: 980px;
+        height: 100%;
+
+        .row {
+            visibility: visible;
+
+            .col-4 {
+                margin-top: 50px;
+                visibility: visible;
+
+                h3 {
+                    color: #fff;
+                    font-size: 38px;
+                    line-height: 47px;
+                    font-weight: 700;
+                    letter-spacing: 0px;
+                    width: 300px;
+                }
+
+                p {
+                    margin-top: 50px;
+                    font-size: 15px;
+                    line-height: 27px;
+                    font-weight: 400;
+                    letter-spacing: 0px;
+                    color: #fff;
+                    width: 300px;
+                }
+            }
+
+            .col-8 {
+                margin-top: 50px;
+                visibility: visible;
+
+                .registration_block {
+                    width: 100%;
+                    height: 581px;
+                    background-color: #5c5149;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+
+                    form {
+                        position: relative;
+
+                        input {
+                            padding: 5px;
+                            background-color: rgba(106, 94, 85, 1);
+                            border: 0px;
+                            height: 40px;
+                            color: white;
+                        }
+                        ::placeholder {
+                            color: #c0bcb9;
+                        }
+
+                        .name {
+                            width: 100%;
+                        }
+
+                        .email {
+                            position: absolute;
+                            top: 80px;
+                            left: 0px;
+                            width: 45%;
+                        }
+
+                        .subject {
+                            position: absolute;
+                            top: 80px;
+                            right: 0px;
+                            width: 45%;
+                        }
+
+                        .details {
+                            position: absolute;
+                            top: 160px;
+                            right: 0px;
+                            width: 100%;
+                        }
+
+                        #textarea {
+                            background-color: rgba(106, 94, 85, 1);
+                            position: absolute;
+                            top: 240px;
+                            right: 0px;
+                            width: 100%;
+                            height: 190px;
+                            border: 0px;
+                        }
+
+                        button {
+                            position: absolute;
+                            top: 450px;
+                            width: 100%;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #ffffff;
+                            border: none;
+                            background-color: #ac8a63;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ___________________________________adaptive__________________________________________________
+
+@media (max-width: 900px) {
+    .Registration {
+        width: 100%;
+        height: 1000px;
+
+        .container_Registration {
+            width: 100%;
+            height: 1000px;
+            .row {
+                visibility: visible;
+
+                .col-4 {
+                    width: 100%;
+
+                    h3 {
+                        font-size: 35px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        font-size: 15px;
+                    }
+                }
+
+                .col-8 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

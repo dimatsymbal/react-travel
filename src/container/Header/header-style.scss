@@ -155,18 +155,34 @@ header {
 
                 .links_in_adaptive {
                     display: block;
+                    margin-right: 40px;
 
-                    .burger_btn_header {
-                        width: 35px;
-                        height: 35px;
-                        align-self: center;
-                        margin-top: 23px;
-                        margin-right: 23px;
-                        background-color: #2b302a;
-                        border: 0;
+                    .dropdown {
+                        width: 40px;
+                        height: 40px;
 
-                        .bi {
-                            color: #ac8a62;
+                        .btn_dropdown {
+                            background-color: #ac8a62;
+                            color: #2b302a;
+                            width: 40px;
+                            height: 40px;
+                            border: 0px;
+                            border-radius: 0px;
+                        }
+
+                        .dropdown-menu {
+                            background-color: #2b302a;
+                            border: 0px;
+                            border-radius: 0px;
+
+                            a {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 300;
+                                width: 170px;
+                                color: #ffffff;
+                                font-size: 17px;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
