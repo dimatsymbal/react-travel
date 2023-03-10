@@ -20,7 +20,7 @@ const ArticleArrey: Article[] = [
         month: 'October',
         date: 22,
         paragraph: '.',
-        category: 'places',
+        category: '/places',
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const ArticleArrey: Article[] = [
         month: 'November',
         date: 29,
         paragraph: '.',
-        category: 'places',
+        category: '/places',
     },
     {
         id: 3,
@@ -42,7 +42,7 @@ const ArticleArrey: Article[] = [
         month: 'December',
         date: 28,
         paragraph: '.',
-        category: 'places',
+        category: '/places',
     },
     {
         id: 4,
@@ -53,7 +53,7 @@ const ArticleArrey: Article[] = [
         month: 'June',
         date: 11,
         paragraph: '.',
-        category: 'guides',
+        category: '/guides',
     },
     {
         id: 5,
@@ -64,7 +64,7 @@ const ArticleArrey: Article[] = [
         month: 'July',
         date: 14,
         paragraph: '.',
-        category: 'guides',
+        category: '/guides',
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ const ArticleArrey: Article[] = [
         month: 'August',
         date: 22,
         paragraph: '.',
-        category: 'guides',
+        category: '/guides',
     },
     {
         id: 7,
@@ -87,7 +87,7 @@ const ArticleArrey: Article[] = [
         author: 'Muffin Group',
         month: 'October',
         date: 7,
-        category: 'adventures',
+        category: '/adventures',
     },
     {
         id: 8,
@@ -99,7 +99,7 @@ const ArticleArrey: Article[] = [
         author: 'Muffin Group',
         month: 'February',
         date: 23,
-        category: 'adventures',
+        category: '/adventures',
     },
 ]
 

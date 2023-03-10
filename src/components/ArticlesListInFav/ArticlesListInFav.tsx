@@ -9,16 +9,19 @@ type Props = {
     articleObject?: {
         [id: number]: Article
     }
+    removeArticleFromFav: (id: number) => void
 }
 
 const ArticlesInFav = ({
     articlesInFav,
     articleObject = getProductsObject(ArticleArrey),
+    removeArticleFromFav,
 }: Props) => {
     return (
         <div>
             {Object.keys(articlesInFav).map((articleId) => (
                 <ArticlesItemInFavList
+                    removeArticleFromFav={removeArticleFromFav}
                     key={articleId}
                     article={articleObject[parseInt(articleId)]}
                 />

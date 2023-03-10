@@ -28,6 +28,14 @@ const App = (props: Props) => {
         }))
     }
 
+    const removeArticleFromFav = (id: number) => {
+        setArticlesInFav((prevState) => {
+            let prevArticleInFav = { ...prevState }
+            delete prevArticleInFav[id]
+            return prevArticleInFav
+        })
+    }
+
     return (
         <>
             <Header />
@@ -38,7 +46,12 @@ const App = (props: Props) => {
                 />
                 <Route
                     path="favorites"
-                    element={<Favorites articlesInFav={articlesInFav} />}
+                    element={
+                        <Favorites
+                            articlesInFav={articlesInFav}
+                            removeArticleFromFav={removeArticleFromFav}
+                        />
+                    }
                 />
                 <Route path="about" element={<About_Page />} />
                 <Route

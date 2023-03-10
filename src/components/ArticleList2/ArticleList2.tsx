@@ -11,7 +11,7 @@ const ArticleList2 = ({ addAricleToFav }: Props) => {
     return (
         <div className="Article_list__2">
             {ArticleArrey.filter(
-                (article) => article.category === 'guides'
+                (article) => article.category === '/guides'
             ).map(({ id, image, knopka, title, author, month, date }) => (
                 <div className="loc" key={id}>
                     <ArticleITEM2

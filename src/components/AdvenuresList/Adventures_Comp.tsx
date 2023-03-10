@@ -9,7 +9,7 @@ const Adventures_Comp = ({ addAricleToFav }: Props) => {
     return (
         <div className="Adventures_Comp">
             {ArticleArrey.filter(
-                (article) => article.category === 'adventures'
+                (article) => article.category === '/adventures'
             ).map(({ id, image, knopka, title, paragraph, author, month }) => (
                 <div className="loc" key={id}>
                     <AdventureITEM
