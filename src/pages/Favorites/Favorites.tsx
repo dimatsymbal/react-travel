@@ -1,5 +1,5 @@
 import './Favorites.scss'
-import ArticlesInFav from 'components/ArticlecInFav/ArticlesInFav'
+import ArticlesListInFav from 'components/ArticlesListInFav/ArticlesListInFav'
 type Props = {
     articlesInFav: {
         [id: number]: number
@@ -14,7 +14,7 @@ const Favorites = ({ articlesInFav }: Props) => {
 
             <div className="favorite_cards">
                 <div className="container">
-                    <ArticlesInFav articlesInFav={articlesInFav} />
+                    <ArticlesListInFav articlesInFav={articlesInFav} />
                 </div>
             </div>
         </div>

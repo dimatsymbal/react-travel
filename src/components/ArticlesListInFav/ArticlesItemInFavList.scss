@@ -1,0 +1,113 @@
+.card_in_favorites {
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 205px;
+    background-color: white;
+    border: 0;
+    border-radius: 0px;
+
+    .card_img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 105px;
+        width: 170px;
+    }
+
+    .title_in_card {
+        max-width: 200px;
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        text-align: left;
+        text-decoration: none;
+        color: #504840;
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn_text {
+        position: absolute;
+        z-index: 4000;
+        top: 90px;
+        left: 200px;
+        font-size: 11px;
+        background-color: rgba(0, 0, 0, 0.05);
+        color: rgba(0, 0, 0, 0.6);
+        padding: 3px 12px;
+        border-radius: 20px;
+        font-weight: 300;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .btn_text:hover {
+        color: black;
+        transition: 0.4s;
+    }
+    .hr {
+        position: absolute;
+        top: 130px;
+        background-color: #504840;
+        opacity: 0.2;
+        width: 98%;
+        height: 1px;
+    }
+    .person_img {
+        position: absolute;
+        bottom: 30px;
+        border-radius: 50px;
+        left: 20px;
+    }
+
+    .author {
+        text-decoration: none;
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        color: #504840;
+        font-size: 15px;
+    }
+    .month {
+        position: absolute;
+        bottom: 15px;
+        left: 220px;
+        color: #504840;
+        font-size: 15px;
+    }
+    .date {
+        position: absolute;
+        bottom: 15px;
+        left: 325px;
+        color: #504840;
+        font-size: 15px;
+    }
+}
+
+.card_in_favorites:hover {
+    box-shadow: 5px 5px 15px rgb(206, 182, 182);
+}
+
+// ___________________________________header_adaptive__________________________________________________
+
+@media (max-width: 900px) {
+    .card_in_favorites {
+        visibility: visible;
+
+        .title_in_card {
+            font-size: 21px;
+        }
+
+        .hr {
+            position: absolute;
+            top: 130px;
+            background-color: #504840;
+            opacity: 0.2;
+            width: 93%;
+            height: 1px;
+        }
+    }
+}

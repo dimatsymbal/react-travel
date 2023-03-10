@@ -85,8 +85,8 @@ const ArticleArrey: Article[] = [
         paragraph:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquum.',
         author: 'Muffin Group',
-        month: 'October 23, 2019',
-        date: 0,
+        month: 'October',
+        date: 7,
         category: 'adventures',
     },
     {
@@ -97,8 +97,8 @@ const ArticleArrey: Article[] = [
         paragraph:
             'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquum.',
         author: 'Muffin Group',
-        month: 'November 23, 2019',
-        date: 0,
+        month: 'February',
+        date: 23,
         category: 'adventures',
     },
 ]
