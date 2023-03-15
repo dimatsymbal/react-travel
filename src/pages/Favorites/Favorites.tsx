@@ -5,8 +5,13 @@ type Props = {
         [id: number]: number
     }
     removeArticleFromFav: (id: number) => void
+    removeAllArticlesFromFav: (id: number) => void
 }
-const Favorites = ({ articlesInFav, removeArticleFromFav }: Props) => {
+const Favorites = ({
+    articlesInFav,
+    removeArticleFromFav,
+    removeAllArticlesFromFav,
+}: Props) => {
     return (
         <div className="favorites_page">
             <div className="introduc_block">
@@ -18,6 +23,7 @@ const Favorites = ({ articlesInFav, removeArticleFromFav }: Props) => {
                     <ArticlesListInFav
                         articlesInFav={articlesInFav}
                         removeArticleFromFav={removeArticleFromFav}
+                        removeAllArticlesFromFav={removeAllArticlesFromFav}
                     />
                 </div>
             </div>

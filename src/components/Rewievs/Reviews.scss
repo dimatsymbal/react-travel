@@ -1,0 +1,44 @@
+.reviews_block {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #504840;
+
+    .reviews_block_container {
+        width: 980px;
+        min-height: 800px;
+
+        .little_title {
+            display: block;
+            margin-top: 23px;
+            margin-left: 30px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: 2px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-size: 38px;
+            line-height: 47px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            width: 60%;
+        }
+
+        .reviews_content {
+            .reviws_card {
+                width: 100%;
+                border-radius: 0px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

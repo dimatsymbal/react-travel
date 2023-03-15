@@ -36,6 +36,14 @@ const App = (props: Props) => {
         })
     }
 
+    const removeAllArticlesFromFav = (id: number) => {
+        setArticlesInFav((prevState) => {
+            let prevArticleInFav = { ...prevState }
+            delete prevArticleInFav[id]
+            return prevArticleInFav
+        })
+    }
+
     return (
         <>
             <Header />
@@ -50,6 +58,7 @@ const App = (props: Props) => {
                         <Favorites
                             articlesInFav={articlesInFav}
                             removeArticleFromFav={removeArticleFromFav}
+                            removeAllArticlesFromFav={removeAllArticlesFromFav}
                         />
                     }
                 />
