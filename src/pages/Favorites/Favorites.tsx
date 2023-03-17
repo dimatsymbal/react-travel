@@ -1,17 +1,12 @@
 import './Favorites.scss'
 import ArticlesListInFav from 'components/ArticlesListInFav/ArticlesListInFav'
+import { useAppSelector } from 'redux/hooks'
 type Props = {
-    articlesInFav: {
-        [id: number]: number
-    }
     removeArticleFromFav: (id: number) => void
-    removeAllArticlesFromFav: (id: number) => void
 }
-const Favorites = ({
-    articlesInFav,
-    removeArticleFromFav,
-    removeAllArticlesFromFav,
-}: Props) => {
+const Favorites = ({ removeArticleFromFav }: Props) => {
+    const articlesInFav = useAppSelector((state) => state.articlesInFav)
+
     return (
         <div className="favorites_page">
             <div className="introduc_block">
@@ -23,7 +18,6 @@ const Favorites = ({
                     <ArticlesListInFav
                         articlesInFav={articlesInFav}
                         removeArticleFromFav={removeArticleFromFav}
-                        removeAllArticlesFromFav={removeAllArticlesFromFav}
                     />
                 </div>
             </div>

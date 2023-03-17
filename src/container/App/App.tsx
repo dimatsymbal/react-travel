@@ -36,13 +36,13 @@ const App = (props: Props) => {
         })
     }
 
-    const removeAllArticlesFromFav = (id: number) => {
-        setArticlesInFav((prevState) => {
-            let prevArticleInFav = { ...prevState }
-            delete prevArticleInFav[id]
-            return prevArticleInFav
-        })
-    }
+    // const removeAllArticlesFromFav = (id: number) => {
+    //     setArticlesInFav((prevState) => {
+    //         let prevArticleInFav = { ...prevState }
+    //         delete prevArticleInFav[id]
+    //         return prevArticleInFav
+    //     })
+    // }
 
     return (
         <>
@@ -56,9 +56,7 @@ const App = (props: Props) => {
                     path="favorites"
                     element={
                         <Favorites
-                            articlesInFav={articlesInFav}
                             removeArticleFromFav={removeArticleFromFav}
-                            removeAllArticlesFromFav={removeAllArticlesFromFav}
                         />
                     }
                 />

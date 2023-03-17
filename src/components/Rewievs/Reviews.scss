@@ -5,26 +5,50 @@
     justify-content: center;
     align-items: center;
     background-color: #504840;
+    position: relative;
 
     .reviews_block_container {
         width: 980px;
         min-height: 800px;
 
+        .send_btn {
+            width: 195px;
+            height: 57px;
+            margin-left: calc(50% - 195px / 2 + 0.5px);
+            margin-top: 30px;
+            background-color: #ac8a62;
+            border: 0;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .send_btn:hover {
+            background-color: #927757;
+            transition: 0.5s;
+        }
+
         .little_title {
             display: block;
             margin-top: 23px;
-            margin-left: 30px;
+            margin-left: 3px;
             font-size: 18px;
             line-height: 24px;
             font-weight: 400;
             color: #ffffff;
             letter-spacing: 2px;
             font-family: 'Montserrat', sans-serif;
+
+            svg {
+                margin-right: 10px;
+            }
         }
 
-        .title {
-            margin-top: 20px;
-            margin-bottom: 40px;
+        .title,
+        .form_title {
+            margin-top: 50px;
+            margin-bottom: 10px;
             color: #ffffff;
             font-size: 38px;
             line-height: 47px;
@@ -36,8 +60,64 @@
         .reviews_content {
             .reviws_card {
                 width: 100%;
-                border-radius: 0px;
+                border-radius: 5px;
                 margin-bottom: 20px;
+                border: 0;
+
+                .name_in_card {
+                    max-width: 200px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #504840;
+                    font-size: 26px;
+                    line-height: 34px;
+                    font-weight: bold;
+                    font-family: 'Montserrat', sans-serif;
+                }
+
+                .hr {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin: auto;
+                    background-color: #504840;
+                    opacity: 0.3;
+                    width: 96%;
+                    height: 1px;
+                }
+
+                .text_in_card {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 20px;
+                    color: #504840;
+                    font-size: 15px;
+                }
+
+                .like_btn {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    font-size: 11px;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    color: rgba(0, 0, 0, 0.6);
+                    border-radius: 20px;
+                    font-weight: 300;
+                    width: 60px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 30px;
+                    border: 0;
+                    cursor: pointer;
+                }
+
+                .like_btn:hover {
+                    transition: 0.4s;
+                    background-color: rgba(0, 0, 0, 0.167);
+                    color: rgba(0, 0, 0, 0.6);
+                }
             }
         }
     }

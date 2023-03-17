@@ -2,11 +2,19 @@ import { Article } from 'Utils/ArticleArrey'
 import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 import './ArticlesItemInFavList.scss'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { removeArticleFromFav } from 'redux/articleReducer'
+import { addLike, removeLike } from 'redux/likeReducer'
 type Props = {
     article: Article
-    removeArticleFromFav: (id: number) => void
+    removeArticleFromFav?: (id: number) => void
 }
-const ArticlesItemInFavList = ({ article, removeArticleFromFav }: Props) => {
+const ArticlesItemInFavList = ({ article }: Props) => {
+    const isDeleted = useAppSelector(
+        (state) => state.productsLikeState[article.id]
+    )
+    const dispatch = useAppDispatch()
+
     return (
         <div>
             <Card className="card_in_favorites">
@@ -46,7 +54,12 @@ const ArticlesItemInFavList = ({ article, removeArticleFromFav }: Props) => {
 
                 <button
                     className="trash_btn"
-                    onClick={() => removeArticleFromFav(article.id)}
+                    onClick={() => {
+                        isDeleted
+                            ? dispatch(removeLike(article.id))
+                            : dispatch(addLike(article.id))
+                        dispatch(removeArticleFromFav(article.id))
+                    }}
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
