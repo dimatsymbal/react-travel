@@ -5,6 +5,7 @@ import './ArticlesItemInFavList.scss'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { removeArticleFromFav } from 'redux/articleReducer'
 import { addLike, removeLike } from 'redux/likeReducer'
+import { useState } from 'react'
 type Props = {
     article: Article
     removeArticleFromFav?: (id: number) => void

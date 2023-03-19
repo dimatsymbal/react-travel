@@ -122,3 +122,28 @@
         }
     }
 }
+
+// __________________adaptive________________________________
+
+@media (max-width: 900px) {
+    .reviews_block {
+        width: 100%;
+
+        .reviews_block_container {
+            width: 100%;
+
+            .title,
+            .form_title {
+                width: 360px;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-left: calc(50% - 360px / 2);
+            }
+
+            .little_title {
+                width: 120px;
+                margin-left: calc(50% - 120px / 2);
+            }
+        }
+    }
+}

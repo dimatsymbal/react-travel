@@ -1,10 +1,8 @@
 import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_Page.scss'
 
-type Props = {
-    addAricleToFav: (id: number) => void
-}
-const Guides_Page = ({ addAricleToFav }: Props) => {
+type Props = {}
+const Guides_Page = (props: Props) => {
     return (
         <div className="Guides_Page">
             <div className="introduc_block">
@@ -13,7 +11,7 @@ const Guides_Page = ({ addAricleToFav }: Props) => {
 
             <div className="guides_page_cards">
                 <div className="container">
-                    <ArticleList2 addAricleToFav={addAricleToFav} />
+                    <ArticleList2 />
                 </div>
             </div>
         </div>

@@ -1,10 +1,8 @@
 import './Favorites.scss'
 import ArticlesListInFav from 'components/ArticlesListInFav/ArticlesListInFav'
 import { useAppSelector } from 'redux/hooks'
-type Props = {
-    removeArticleFromFav: (id: number) => void
-}
-const Favorites = ({ removeArticleFromFav }: Props) => {
+type Props = {}
+const Favorites = (props: Props) => {
     const articlesInFav = useAppSelector((state) => state.articlesInFav)
 
     return (
@@ -15,10 +13,7 @@ const Favorites = ({ removeArticleFromFav }: Props) => {
 
             <div className="favorite_cards">
                 <div className="container">
-                    <ArticlesListInFav
-                        articlesInFav={articlesInFav}
-                        removeArticleFromFav={removeArticleFromFav}
-                    />
+                    <ArticlesListInFav articlesInFav={articlesInFav} />
                 </div>
             </div>
         </div>

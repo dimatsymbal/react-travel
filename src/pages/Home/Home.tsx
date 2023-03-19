@@ -5,17 +5,15 @@ import Guest_Block from './Guest Block/Guest_Block'
 import Adventures_block from './Adventures Block/Adventures_block'
 import Slider_Block from './Slider Block/Slider_Block'
 import Reviews from 'components/Rewievs/Reviews'
-type Props = {
-    addAricleToFav: (id: number) => void
-}
-const Home = ({ addAricleToFav }: Props) => {
+type Props = {}
+const Home = (props: Props) => {
     return (
         <>
             <Guest_Block />
-            <Adventures_block addAricleToFav={addAricleToFav} />
+            <Adventures_block />
             <Slider_Block />
-            <Places_block addAricleToFav={addAricleToFav} />
-            <Guides_block addAricleToFav={addAricleToFav} />
+            <Places_block />
+            <Guides_block />
             <View_Block />
             <Reviews />
         </>

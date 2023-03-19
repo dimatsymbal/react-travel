@@ -1,11 +1,9 @@
 import AdventureITEM from './AdventureITEM'
 import ArticleArrey from 'Utils/ArticleArrey'
 import './AdventureComp.scss'
-type Props = {
-    addAricleToFav: (id: number) => void
-}
+type Props = {}
 
-const Adventures_Comp = ({ addAricleToFav }: Props) => {
+const Adventures_Comp = (props: Props) => {
     return (
         <div className="Adventures_Comp">
             {ArticleArrey.filter(
@@ -20,7 +18,6 @@ const Adventures_Comp = ({ addAricleToFav }: Props) => {
                         author={author}
                         month={month}
                         id={id}
-                        addAricleToFav={addAricleToFav}
                     />
                 </div>
             ))}

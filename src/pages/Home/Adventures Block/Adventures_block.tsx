@@ -2,10 +2,8 @@ import Adventures_logo from 'components/adventures_logo/adventures_logo'
 import Adventures_Comp from 'components/AdvenuresList/Adventures_Comp'
 import './Adventures_block.scss'
 import { Link } from 'react-router-dom'
-type Props = {
-    addAricleToFav: (id: number) => void
-}
-const Adventures_block = ({ addAricleToFav }: Props) => {
+type Props = {}
+const Adventures_block = (props: Props) => {
     return (
         <div className="Adventures_block">
             <div className="container">
@@ -15,7 +13,7 @@ const Adventures_block = ({ addAricleToFav }: Props) => {
                     Lorem ipsum dolor sit amet tetur adipis icing elit
                 </h2>
 
-                <Adventures_Comp addAricleToFav={addAricleToFav} />
+                <Adventures_Comp />
 
                 <Link className="discover_more" to="/adventures">
                     Discover more

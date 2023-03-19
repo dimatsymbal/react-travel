@@ -3,11 +3,9 @@ import ArticleITEM2 from './ArticleITEM2'
 import './AricleList2.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-type Props = {
-    addAricleToFav: (id: number) => void
-}
+type Props = {}
 
-const ArticleList2 = ({ addAricleToFav }: Props) => {
+const ArticleList2 = (props: Props) => {
     return (
         <div className="Article_list__2">
             {ArticleArrey.filter(
@@ -22,7 +20,6 @@ const ArticleList2 = ({ addAricleToFav }: Props) => {
                         author={author}
                         month={month}
                         date={date}
-                        addAricleToFav={addAricleToFav}
                     />
                 </div>
             ))}
