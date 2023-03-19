@@ -13,14 +13,14 @@ const ReviewsItem = ({ id, name, text, count }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
 
-    const [likeCouner, setLikeCountr] = useState<number>(1)
+    const [likeCouner, setLikeCountr] = useState<number>(0)
 
     const addLikeCounter = () => {
-        setLikeCountr(1)
+        setLikeCountr(0)
     }
 
     const removeLikeCounter = () => {
-        setLikeCountr(2)
+        setLikeCountr(1)
     }
 
     const finalLikeCount = count + likeCouner

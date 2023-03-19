@@ -34,18 +34,23 @@
         text-align: center;
     }
 
-    button {
-        width: 195px;
-        height: 57px;
-        position: absolute;
-        left: calc(50% - 195px / 2 + 0.5px);
-        top: 300px;
-        background-color: #ac8a62;
-        border: 0;
-        cursor: pointer;
+    .link {
         color: #ffffff;
-        font-size: 20px;
-        font-weight: 700;
+        text-decoration: none;
+
+        button {
+            width: 195px;
+            height: 57px;
+            position: absolute;
+            left: calc(50% - 195px / 2 + 0.5px);
+            top: 300px;
+            background-color: #ac8a62;
+            border: 0;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
 
     button:hover {

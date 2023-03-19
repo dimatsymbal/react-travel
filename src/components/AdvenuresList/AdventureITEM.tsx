@@ -71,8 +71,10 @@ const AdventureITEM = ({
                         </Link>
                     </button>
                 </a>
-                <a className="title_in_card" href="#">
-                    {title}
+                <a href="#">
+                    <Link className="title_in_card" to={`/articles/${id}`}>
+                        {title}
+                    </Link>
                 </a>
                 <p>{paragraph}</p>
 

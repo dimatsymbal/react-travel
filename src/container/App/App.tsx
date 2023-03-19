@@ -9,6 +9,7 @@ import JoinUs from 'pages/JoinUs/JoinUs'
 import 'assets/font.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from 'pages/Home/Home'
+import ArticlePage from 'pages/Article/ArticlePage'
 
 type Props = {}
 
@@ -23,7 +24,7 @@ const App = (props: Props) => {
                 <Route path="adventures" element={<Adventures_Page />} />
                 <Route path="places" element={<Places_Page />} />
                 <Route path="guides" element={<Guides_Page />} />
-
+                <Route path="/articles/:id" element={<ArticlePage />} />
                 <Route path="joinus" element={<JoinUs />} />
             </Routes>
             <Footer />

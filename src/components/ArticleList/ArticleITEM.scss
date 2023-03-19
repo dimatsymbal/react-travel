@@ -50,9 +50,15 @@
             height: 33px;
             border: 0;
             cursor: pointer;
+            text-decoration: none;
+
+            .link {
+                color: rgba(0, 0, 0, 0.6);
+                text-decoration: none;
+            }
         }
 
-        .btn_places:hover {
+        .btn_places:hover .link {
             color: black;
             transition: 0.4s;
         }

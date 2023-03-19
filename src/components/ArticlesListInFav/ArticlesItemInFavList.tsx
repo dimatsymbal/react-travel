@@ -5,7 +5,6 @@ import './ArticlesItemInFavList.scss'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { removeArticleFromFav } from 'redux/articleReducer'
 import { addLike, removeLike } from 'redux/likeReducer'
-import { useState } from 'react'
 type Props = {
     article: Article
     removeArticleFromFav?: (id: number) => void
@@ -20,8 +19,13 @@ const ArticlesItemInFavList = ({ article }: Props) => {
         <div>
             <Card className="card_in_favorites">
                 <img className="card_img" src={article.image} alt="image" />
-                <a className="title_in_card" href="#">
-                    {article.title}
+                <a href="#">
+                    <Link
+                        className="title_in_card"
+                        to={`/articles/${article.id}`}
+                    >
+                        {article.title}
+                    </Link>
                 </a>
                 <Link className="btn_text" to={article.category}>
                     {article.knopka}

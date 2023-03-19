@@ -2,6 +2,7 @@ import './ArticleITEM2.scss'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
 import { addAricleToFav, removeArticleFromFav } from 'redux/articleReducer'
+import { Link } from 'react-router-dom'
 
 type Props = {
     id: number
@@ -11,7 +12,6 @@ type Props = {
     author: string
     month: string
     date: number
-    addAricleToFav?: (id: number) => void
 }
 const ArticleITEM2 = ({
     id,
@@ -21,8 +21,7 @@ const ArticleITEM2 = ({
     author,
     month,
     date,
-}: // addAricleToFav,
-Props) => {
+}: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
 
@@ -68,10 +67,16 @@ Props) => {
 
             <div className="card_body">
                 <a href="#">
-                    <button className="btn_places">{knopka}</button>
+                    <button className="btn_places">
+                        <Link className="link" to="/guides">
+                            {knopka}
+                        </Link>
+                    </button>
                 </a>
-                <a className="title_in_card" href="#">
-                    {title}
+                <a href="#">
+                    <Link className="title_in_card" to={`/articles/${id}`}>
+                        {title}
+                    </Link>
                 </a>
                 <div className="hr"></div>
                 <img
