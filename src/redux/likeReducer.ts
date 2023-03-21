@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { omit } from 'lodash'
 //ОПИС ТИПІВ ДАННИХ
 type likeProductsType = {
     [id: number]: boolean
