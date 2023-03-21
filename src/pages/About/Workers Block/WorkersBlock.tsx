@@ -1,5 +1,5 @@
 import './Workers_block.css'
-import Workers_list from 'components/WorkersList/Workers_list'
+import Workers_list from 'components/WorkersList/WorkersList'
 
 type Props = {}
 const Workers_block = (props: Props) => {

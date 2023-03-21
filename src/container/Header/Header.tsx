@@ -1,5 +1,5 @@
 import './header-style.scss'
-import Menu_item from 'components/Menu_item/MenuItem'
+import Menu_item from 'components/MenuItem/MenuItem'
 import { Link } from 'react-router-dom'
 
 type Props = {}

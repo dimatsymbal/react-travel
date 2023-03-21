@@ -1,5 +1,5 @@
 import './Footer.scss'
-import Footer_logo from 'components/footer_logo/FooterLogo'
+import Footer_logo from 'components/FooterLogo/FooterLogo'
 type Props = {}
 const Footer = (props: Props) => {
     return (

@@ -1,4 +1,4 @@
-import Guides_logo from 'components/guides_logo/guides_logo'
+import Guides_logo from 'components/GuidesLogo/GuidesLogo'
 import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_block.scss'
 

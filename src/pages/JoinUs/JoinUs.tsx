@@ -1,6 +1,6 @@
-import First_part from './First_part/First_part'
+import First_part from './FirstPart/FirstPart'
 import Registration from './Registration/Registration'
-import Under_reg from './Under_reg/Under_reg'
+import Under_reg from './UnderReg/UnderReg'
 
 type Props = {}
 const JoinUs = (props: Props) => {

@@ -1,4 +1,4 @@
-import Slider_Comp from 'components/Slider/Slider_Comp'
+import Slider_Comp from 'components/Slider/SliderComp'
 import './Slider_Block.scss'
 type Props = {}
 const Slider_Block = (props: Props) => {

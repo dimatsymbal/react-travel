@@ -1,4 +1,4 @@
-import Adventures_logo from 'components/adventures_logo/adventures_logo'
+import Adventures_logo from 'components/AdventuresLogo/AdventuresLogo'
 import Adventures_Comp from 'components/AdvenuresList/AdventuresComp'
 import './Adventures_block.scss'
 import { Link } from 'react-router-dom'

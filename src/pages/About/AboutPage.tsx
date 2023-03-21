@@ -1,5 +1,5 @@
 import View_Block from 'pages/Home/View Block/ViewBlock'
-import All_logos from 'components/all_logos/AllLogos'
+import All_logos from 'components/AllLogos/AllLogos'
 import Reading_block from './Reading Block/ReadingBlock'
 import { Link } from 'react-router-dom'
 import './About_Page.scss'

@@ -1,4 +1,4 @@
-import Places_logo from 'components/places_logo/places_logo'
+import Places_logo from 'components/PlacesLogo/PlacesLogo'
 import './Places_block.scss'
 import ArticleList from 'components/ArticleList/ArticleList'
 

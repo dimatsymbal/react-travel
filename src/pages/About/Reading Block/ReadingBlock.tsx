@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Total_logo from 'components/total_logo/total_logo'
-import Lapki_logo from 'components/lapki_logo/lapki_logo'
+import Total_logo from 'components/TotalLogo/TotalLogo'
+import Lapki_logo from 'components/LapkiLogo/LapkiLogo'
 import './Reading_block.css'
 type Props = {}
 const Reading_block = (props: Props) => {
