@@ -61,7 +61,11 @@ const AdventureITEM = ({
                 )}{' '}
             </button>
             <div className="photo_of_card_div">
-                <img className="photo_of_card" src={image} alt="image" />
+                <img
+                    className="photo_of_card"
+                    src={image}
+                    alt="bebebe_of_card"
+                />
             </div>
             <div className="card_body">
                 <a href="#">
