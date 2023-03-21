@@ -1,8 +1,8 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Total_logo from 'components/TotalLogo/TotalLogo'
-import Lapki_logo from 'components/LapkiLogo/LapkiLogo'
+import TotalLogo from 'components/TotalLogo/TotalLogo'
+import LapkiLogo from 'components/LapkiLogo/LapkiLogo'
 import './Reading_block.css'
 type Props = {}
 const ReadingBlock = (props: Props) => {
@@ -12,7 +12,7 @@ const ReadingBlock = (props: Props) => {
                 <Container className="container">
                     <Row>
                         <Col className="left">
-                            <Total_logo />
+                            <TotalLogo />
                             <h2 className="h2_reading_block">
                                 Lorem ipsum dolor sit amet tetur adipis icing
                                 elit
@@ -53,7 +53,7 @@ const ReadingBlock = (props: Props) => {
                                     alt="BABGFH"
                                 />
                             </div>
-                            <Lapki_logo />
+                            <LapkiLogo />
 
                             <h3 className="h3_reading_block">
                                 Lorem ipsum dolor sit amet, consectetur

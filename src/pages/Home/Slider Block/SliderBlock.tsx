@@ -1,11 +1,11 @@
-import Slider_Comp from 'components/Slider/SliderComp'
+import SliderComp from 'components/Slider/SliderComp'
 import './Slider_Block.scss'
 type Props = {}
-const Slider_Block = (props: Props) => {
+const SliderBlock = (props: Props) => {
     return (
         <div className="Slider_Block">
-            <Slider_Comp />
+            <SliderComp />
         </div>
     )
 }
-export default Slider_Block
+export default SliderBlock

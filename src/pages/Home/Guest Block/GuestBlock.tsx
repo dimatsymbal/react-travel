@@ -19,7 +19,7 @@ const Guest_Block = (props: Props) => {
 
             <div className="down_field">
                 <div className="flex_block">
-                    <a href="#">
+                    <a href="/">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -32,7 +32,7 @@ const Guest_Block = (props: Props) => {
                         </svg>{' '}
                         Instagram
                     </a>
-                    <a href="#">
+                    <a href="/">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
