@@ -1,9 +1,9 @@
-import View_Block from 'pages/Home/View Block/View_Block'
-import All_logos from 'components/all_logos/all_logos'
-import Reading_block from './Reading Block/Reading_block'
+import View_Block from 'pages/Home/View Block/ViewBlock'
+import All_logos from 'components/all_logos/AllLogos'
+import Reading_block from './Reading Block/ReadingBlock'
 import { Link } from 'react-router-dom'
 import './About_Page.scss'
-import Workers_block from './Workers Block/Workers_block'
+import Workers_block from './Workers Block/WorkersBlock'
 type Props = {}
 const About_Page = (props: Props) => {
     return (

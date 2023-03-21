@@ -1,9 +1,9 @@
-import Places_block from './Places Block/Places_block'
-import Guides_block from './Guides Block/Guides_block'
-import View_Block from './View Block/View_Block'
-import Guest_Block from './Guest Block/Guest_Block'
-import Adventures_block from './Adventures Block/Adventures_block'
-import Slider_Block from './Slider Block/Slider_Block'
+import Places_block from './Places Block/PlacesBlock'
+import Guides_block from './Guides Block/GuidesBlock'
+import View_Block from './View Block/ViewBlock'
+import Guest_Block from './Guest Block/GuestBlock'
+import Adventures_block from './Adventures Block/AdventuresBlock'
+import Slider_Block from './Slider Block/SliderBlock'
 import Reviews from 'components/Rewievs/Reviews'
 type Props = {}
 const Home = (props: Props) => {

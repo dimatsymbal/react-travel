@@ -1,5 +1,5 @@
 import './Footer.scss'
-import Footer_logo from 'components/footer_logo/Footer_logo'
+import Footer_logo from 'components/footer_logo/FooterLogo'
 type Props = {}
 const Footer = (props: Props) => {
     return (
@@ -15,10 +15,10 @@ const Footer = (props: Props) => {
                 </p>
 
                 <h6>
-                    © 2023 Betheme by <a href="#">Muffin group</a> | All Rights
-                    Reserved | Powered by <a href="#">WordPress</a>
+                    © 2023 Betheme by <a href="/">Muffin group</a> | All Rights
+                    Reserved | Powered by <a href="/">WordPress</a>
                 </h6>
-                <a href="#">
+                <a href="/">
                     <button>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

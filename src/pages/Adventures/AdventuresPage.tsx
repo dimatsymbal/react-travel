@@ -1,5 +1,5 @@
-import './Adventures_Page.scss'
-import Adventures_Comp from 'components/AdvenuresList/Adventures_Comp'
+import './AdventuresPage.scss'
+import Adventures_Comp from 'components/AdvenuresList/AdventuresComp'
 type Props = {}
 const Adventures_Page = (props: Props) => {
     return (
