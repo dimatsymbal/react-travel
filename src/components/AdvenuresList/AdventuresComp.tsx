@@ -3,7 +3,7 @@ import ArticleArrey from 'Utils/ArticleArrey'
 import './AdventureComp.scss'
 type Props = {}
 
-const Adventures_Comp = (props: Props) => {
+const AdventuresComp = (props: Props) => {
     return (
         <div className="Adventures_Comp">
             {ArticleArrey.filter(
@@ -24,4 +24,4 @@ const Adventures_Comp = (props: Props) => {
         </div>
     )
 }
-export default Adventures_Comp
+export default AdventuresComp

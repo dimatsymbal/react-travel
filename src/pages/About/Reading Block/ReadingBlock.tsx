@@ -5,7 +5,7 @@ import Total_logo from 'components/TotalLogo/TotalLogo'
 import Lapki_logo from 'components/LapkiLogo/LapkiLogo'
 import './Reading_block.css'
 type Props = {}
-const Reading_block = (props: Props) => {
+const ReadingBlock = (props: Props) => {
     return (
         <div className="Reading_block">
             <div className="reading_block_content">
@@ -50,7 +50,7 @@ const Reading_block = (props: Props) => {
                                 <img
                                     className="photo_of_reading_block"
                                     src="https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger-about-lady.jpg"
-                                    alt="image"
+                                    alt="BABGFH"
                                 />
                             </div>
                             <Lapki_logo />
@@ -82,4 +82,4 @@ const Reading_block = (props: Props) => {
         </div>
     )
 }
-export default Reading_block
+export default ReadingBlock

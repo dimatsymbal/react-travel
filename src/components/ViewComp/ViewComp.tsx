@@ -3,7 +3,7 @@ import './View_Comp.scss'
 
 type Props = {}
 
-const View_Comp = (props: Props) => {
+const ViewComp = (props: Props) => {
     return (
         <div className="View_Comp">
             <img src="/images/view_comp_little_img.png" alt="img_view_comp" />
@@ -14,4 +14,4 @@ const View_Comp = (props: Props) => {
         </div>
     )
 }
-export default View_Comp
+export default ViewComp

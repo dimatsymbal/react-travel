@@ -5,7 +5,7 @@ type Props = {
     to: string
     children: React.ReactNode
 }
-const Menu_item = ({ to, children }: Props) => {
+const MenuItem = ({ to, children }: Props) => {
     return (
         <a className="links_navbar" href="/">
             <NavLink
@@ -19,4 +19,4 @@ const Menu_item = ({ to, children }: Props) => {
         </a>
     )
 }
-export default Menu_item
+export default MenuItem

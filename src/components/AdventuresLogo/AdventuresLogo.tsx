@@ -1,7 +1,7 @@
 import adventures_logo from 'assets/adventures_logo.jpg'
 import './adventures_logo.css'
 type Props = {}
-const Adventures_logo = (props: Props) => {
+const AdventuresLogo = (props: Props) => {
     return (
         <img
             className="adventures_logo"
@@ -10,4 +10,4 @@ const Adventures_logo = (props: Props) => {
         />
     )
 }
-export default Adventures_logo
+export default AdventuresLogo

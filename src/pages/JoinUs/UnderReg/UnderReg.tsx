@@ -1,7 +1,7 @@
 import './Under_reg.scss'
 
 type Props = {}
-const Under_reg = (props: Props) => {
+const UnderReg = (props: Props) => {
     return (
         <div className="Under_reg">
             <div className="container_Under_reg">
@@ -63,4 +63,4 @@ const Under_reg = (props: Props) => {
         </div>
     )
 }
-export default Under_reg
+export default UnderReg

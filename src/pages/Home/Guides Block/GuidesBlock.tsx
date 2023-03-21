@@ -1,4 +1,4 @@
-import Guides_logo from 'components/GuidesLogo/GuidesLogo'
+import GuidesLogo from 'components/GuidesLogo/GuidesLogo'
 import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_block.scss'
 
@@ -7,7 +7,7 @@ const Guides_block = (props: Props) => {
     return (
         <div className="Guides_block">
             <div className="container">
-                <Guides_logo />
+                <GuidesLogo />
                 <h6 className="little_title">Guides</h6>
                 <h2 className="title">
                     Lorem ipsum dolor sit amet tetur adipis icing elit

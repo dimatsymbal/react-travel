@@ -1,5 +1,5 @@
 import './header-style.scss'
-import Menu_item from 'components/MenuItem/MenuItem'
+import MenuItem from 'components/MenuItem/MenuItem'
 import { Link } from 'react-router-dom'
 
 type Props = {}
@@ -15,12 +15,12 @@ const Header = (props: Props) => {
                     />
                 </div>
                 <div className="rightside_navbar">
-                    <Menu_item to="/">Home</Menu_item>
-                    <Menu_item to="/about">About</Menu_item>
-                    <Menu_item to="/favorites">Favorites</Menu_item>
-                    <Menu_item to="/adventures">Adventures</Menu_item>
-                    <Menu_item to="/places">Places</Menu_item>
-                    <Menu_item to="/guides">Guides</Menu_item>
+                    <MenuItem to="/">Home</MenuItem>
+                    <MenuItem to="/about">About</MenuItem>
+                    <MenuItem to="/favorites">Favorites</MenuItem>
+                    <MenuItem to="/adventures">Adventures</MenuItem>
+                    <MenuItem to="/places">Places</MenuItem>
+                    <MenuItem to="/guides">Guides</MenuItem>
 
                     <div className="links_in_adaptive">
                         <div className="dropdown">

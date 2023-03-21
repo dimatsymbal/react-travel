@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 type Props = {}
-const Workers_list = (props: Props) => {
+const WorkersList = (props: Props) => {
     return (
         <div className="Workers_list">
             <Container>
@@ -181,4 +181,4 @@ const Workers_list = (props: Props) => {
         </div>
     )
 }
-export default Workers_list
+export default WorkersList

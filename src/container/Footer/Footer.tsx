@@ -1,11 +1,11 @@
 import './Footer.scss'
-import Footer_logo from 'components/FooterLogo/FooterLogo'
+import FooterLogo from 'components/FooterLogo/FooterLogo'
 type Props = {}
 const Footer = (props: Props) => {
     return (
         <div className="footer">
             <div className="container">
-                <Footer_logo />
+                <FooterLogo />
                 <p id="paragraph_in_footer">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna

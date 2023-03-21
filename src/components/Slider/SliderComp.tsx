@@ -2,7 +2,7 @@ import './Slider_Comp.css'
 import Carousel from 'react-bootstrap/Carousel'
 
 type Props = {}
-const Slider_Comp = (props: Props) => {
+const SliderComp = (props: Props) => {
     return (
         <Carousel className="carusel">
             <Carousel.Item className="carusel_item" interval={13000}>
@@ -73,4 +73,4 @@ const Slider_Comp = (props: Props) => {
         </Carousel>
     )
 }
-export default Slider_Comp
+export default SliderComp

@@ -2,7 +2,7 @@ import ArticleList2 from 'components/ArticleList2/ArticleList2'
 import './Guides_Page.scss'
 
 type Props = {}
-const Guides_Page = (props: Props) => {
+const GuidesPage = (props: Props) => {
     return (
         <div className="Guides_Page">
             <div className="introduc_block">
@@ -17,4 +17,4 @@ const Guides_Page = (props: Props) => {
         </div>
     )
 }
-export default Guides_Page
+export default GuidesPage

@@ -2,7 +2,7 @@ import './Places_Page.scss'
 import ArticleList from 'components/ArticleList/ArticleList'
 
 type Props = {}
-const Places_Page = (props: Props) => {
+const PlacesPage = (props: Props) => {
     return (
         <div className="Places_Page">
             <div className="introduc_block">
@@ -17,4 +17,4 @@ const Places_Page = (props: Props) => {
         </div>
     )
 }
-export default Places_Page
+export default PlacesPage

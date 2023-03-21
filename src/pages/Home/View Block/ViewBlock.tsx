@@ -1,11 +1,11 @@
-import View_Comp from 'components/ViewComp/ViewComp'
+import ViewComp from 'components/ViewComp/ViewComp'
 
 type Props = {}
-const View_Block = (props: Props) => {
+const ViewBlock = (props: Props) => {
     return (
         <>
-            <View_Comp />
+            <ViewComp />
         </>
     )
 }
-export default View_Block
+export default ViewBlock

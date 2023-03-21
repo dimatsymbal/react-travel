@@ -1,7 +1,7 @@
 import './First_part.scss'
 
 type Props = {}
-const First_part = (props: Props) => {
+const FirstPart = (props: Props) => {
     return (
         <div className="First_part">
             <div className="container_first_part">
@@ -15,4 +15,4 @@ const First_part = (props: Props) => {
         </div>
     )
 }
-export default First_part
+export default FirstPart
