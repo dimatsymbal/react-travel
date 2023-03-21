@@ -68,14 +68,14 @@ const AdventureITEM = ({
                 />
             </div>
             <div className="card_body">
-                <a href="#">
+                <a>
                     <button>
                         <Link className="link" to="/adventures">
                             {knopka}
                         </Link>
                     </button>
                 </a>
-                <a href="#">
+                <a>
                     <Link className="title_in_card" to={`/articles/${id}`}>
                         {title}
                     </Link>
@@ -88,9 +88,7 @@ const AdventureITEM = ({
                     src="https://secure.gravatar.com/avatar/057e2eb392b95a2ecfc9d32d554e3917?s=24&d=mm&r=g"
                     alt="person"
                 />
-                <a href="#" className="author">
-                    {author}
-                </a>
+                <a className="author">{author}</a>
 
                 <p className="month">
                     <svg
