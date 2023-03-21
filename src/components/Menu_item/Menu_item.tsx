@@ -7,7 +7,7 @@ type Props = {
 }
 const Menu_item = ({ to, children }: Props) => {
     return (
-        <a className="links_navbar" href="#">
+        <a className="links_navbar" href="/">
             <NavLink
                 to={to}
                 className={({ isActive }) =>

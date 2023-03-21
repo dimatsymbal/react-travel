@@ -18,8 +18,12 @@ const ArticlesItemInFavList = ({ article }: Props) => {
     return (
         <div>
             <Card className="card_in_favorites">
-                <img className="card_img" src={article.image} alt="image" />
-                <a href="#">
+                <img
+                    className="card_img"
+                    src={article.image}
+                    alt="card_asfkasf"
+                />
+                <a href="/">
                     <Link
                         className="title_in_card"
                         to={`/articles/${article.id}`}
@@ -38,7 +42,7 @@ const ArticlesItemInFavList = ({ article }: Props) => {
                     src="https://secure.gravatar.com/avatar/057e2eb392b95a2ecfc9d32d554e3917?s=24&d=mm&r=g"
                     alt="person"
                 />
-                <a href="#" className="author">
+                <a href="/" className="author">
                     {article.author}
                 </a>
                 <p className="month">

@@ -63,18 +63,22 @@ const ArticleITEM = ({
             </button>
 
             <div className="photo_of_card_div">
-                <img className="photo_of_card" src={image} alt="image" />
+                <img
+                    className="photo_of_card"
+                    src={image}
+                    alt="photo_of_card"
+                />
             </div>
 
             <div className="card_body">
-                <a href="#">
+                <a href="/">
                     <button className="btn_places">
                         <Link className="link" to="/places">
                             {knopka}
                         </Link>
                     </button>
                 </a>
-                <a href="#">
+                <a href="/">
                     <Link className="title_in_card" to={`/articles/${id}`}>
                         {title}
                     </Link>
@@ -84,7 +88,7 @@ const ArticleITEM = ({
                     src="https://secure.gravatar.com/avatar/057e2eb392b95a2ecfc9d32d554e3917?s=24&d=mm&r=g"
                     alt="person"
                 />
-                <a href="#" className="author">
+                <a href="/" className="author">
                     {author}
                 </a>
                 <p className="month">
