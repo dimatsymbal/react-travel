@@ -18,14 +18,28 @@ const ArticlesInFav = ({
     return (
         <>
             <div>
-                {Object.keys(articlesInFav).map((articleId) => (
-                    <ArticlesItemInFavList
-                        key={articleId}
-                        article={articleObject[parseInt(articleId)]}
-                    />
-                ))}
+                {Object.keys(articlesInFav).length === 0 ? (
+                    <p
+                        style={{
+                            textAlign: 'center',
+                            fontSize: '25px',
+                            marginTop: '35px',
+                        }}
+                        className="empty_list"
+                    >
+                        The list is empty
+                    </p>
+                ) : (
+                    Object.keys(articlesInFav).map((articleId) => (
+                        <ArticlesItemInFavList
+                            key={articleId}
+                            article={articleObject[parseInt(articleId)]}
+                        />
+                    ))
+                )}
             </div>
         </>
     )
 }
+
 export default ArticlesInFav

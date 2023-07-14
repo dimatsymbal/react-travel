@@ -1,3 +1,4 @@
+import TemporaryDrawer from 'components/AdaptiveMenu/AdaptiveMenu'
 import './header-style.scss'
 import MenuItem from 'components/MenuItem/MenuItem'
 import { Link } from 'react-router-dom'
@@ -23,7 +24,7 @@ const Header = (props: Props) => {
                     <MenuItem to="/guides">Guides</MenuItem>
 
                     <div className="links_in_adaptive">
-                        <div className="dropdown">
+                        {/* <div className="dropdown">
                             <button
                                 className="btn_dropdown dropdown-toggle"
                                 type="button"
@@ -64,7 +65,9 @@ const Header = (props: Props) => {
                                     <Link to="/guides">Guides</Link>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
+
+                        <TemporaryDrawer />
                     </div>
 
                     <Link className="btn_join_us" to="/joinus">

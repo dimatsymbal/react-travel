@@ -10,6 +10,7 @@ import 'assets/font.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from 'pages/Home/Home'
 import ArticlePage from 'pages/Article/ArticlePage'
+import ScrollToTop from 'Utils/ScrollToTop'
 
 type Props = {}
 
@@ -17,6 +18,7 @@ const App = (props: Props) => {
     return (
         <>
             <Header />
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="favorites" element={<Favorites />} />
